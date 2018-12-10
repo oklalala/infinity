@@ -19,16 +19,28 @@
 
 #### 想學習的方向
 
-Tony、Jimmy：
-Vue.js > vanilla JS > CSS
-日安：多人協作。
+- Tony、Jimmy：
+  - Vue.js > vanilla JS > CSS
+- 日安：多人協作。
 
-### Day 02 確認需求並分配工作
+### Day 02 確認需求
 
 #### 進度
 
 - 找到素材，確定不用 Vue.js
 - 開了 trello
-- 分析需求及確認功能
+- 分析需求及確認所有功能
 
-### Day 03 分配工作
+### Day 03 討論 UI flow
+
+#### 使用技術
+
+- sass
+- jQuery
+
+#### 協作方式
+
+- 一個人先切共同區域的版 CSS
+  - 日安（暫定）
+- 其他兩個做功能
+  - Tony
