@@ -58,6 +58,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+.menu__hamburger {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 39px;
+  height: 19px;
+  background: red;
+}
+@media screen and (max-width: 600px) {
+  .menu__hamburger {
+    top: 35px;
+    left: 20px;
+  }
+}
+
+.contact {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    display: none;
+  }
+}
+.contact img {
+  width: 100%;
+}
+
+.welcome {
+  background-image: url("../image/header_photo_background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  outline: orange 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+.center__line {
+  background: white;
+  width: 175px;
+  height: 2px;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .center__line {
+    display: none;
+  }
+}
+.center img {
+  width: 510px;
+}
+@media screen and (max-width: 600px) {
+  .center img {
+    width: 335px;
+  }
+}
+.center__arrow {
+  width: 24px;
+  height: 34px;
+  position: absolute;
+  bottom: 80px;
+}
+
 * {
   box-sizing: border-box;
 }
