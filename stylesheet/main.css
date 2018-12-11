@@ -240,29 +240,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .dream__images img {
   position: absolute;
-  width: 120px;
+  width: 390px;
+}
+@media screen and (max-width: 600px) {
+  .dream__images img {
+    width: 120px;
+  }
 }
 .dream__images img:nth-child(1) {
   position: relative;
 }
 .dream__images img:nth-child(2) {
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  left: 100px;
   z-index: -1;
 }
 @media screen and (max-width: 600px) {
   .dream__images img:nth-child(2) {
-    width: 120px;
+    top: 50px;
+    left: 50px;
   }
 }
 .dream__images img:nth-child(3) {
-  top: 100px;
-  left: 100px;
+  top: 200px;
+  left: 200px;
+  padding-bottom: 67px;
   z-index: -2;
 }
 @media screen and (max-width: 600px) {
   .dream__images img:nth-child(3) {
-    width: 120px;
+    top: 100px;
+    left: 100px;
+    padding-bottom: 0;
   }
 }
 .dream__line {
@@ -321,7 +330,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 2px;
-  padding-bottom: 67px;
 }
 @media screen and (max-width: 600px) {
   .dream__text__description {

@@ -92,25 +92,32 @@
     } 
     img{
       position: absolute;
-      width: 120px;
+      width: 390px;
+      @media screen and (max-width: 600px) {
+        width: 120px;
+      } 
     }
     img:nth-child(1) {
       position: relative;
       
     }
     img:nth-child(2) {
-      top: 50px;
-      left: 50px;
+      top: 100px;
+      left: 100px;
       @media screen and (max-width: 600px) {
-        width: 120px;
+        top: 50px;
+        left: 50px;
       } 
       z-index: -1;
     }
     img:nth-child(3) {
-      top: 100px;
-      left: 100px;
+      top: 200px;
+      left: 200px;
+      padding-bottom: 67px;
       @media screen and (max-width: 600px) {
-        width: 120px;
+        top: 100px;
+        left: 100px;
+        padding-bottom: 0;
       } 
       z-index: -2;
     }
@@ -167,7 +174,6 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 2px;
-    padding-bottom: 67px;
     @media screen and (max-width: 600px){
       font-size: 12px;
       line-height: 16px;
