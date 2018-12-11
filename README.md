@@ -28,7 +28,7 @@
 #### 進度
 
 - 找到素材，確定不用 Vue.js
-- 開了 trello
+- 開了 Trello
 - 分析需求及確認所有功能
 
 ### Day 03 討論 UI flow
