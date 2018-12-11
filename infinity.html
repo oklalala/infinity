@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="stylesheet/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <title>Document</title>
+    <style>
+      .view {
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+      .parallax__container {
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+      }
+      .parallax__view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      .parallax__base {
+        transform: translateZ(0px);
+      }
+      .parallax__title {
+        transform: translateZ(-0.5px) scale(1.5);
+      }
+      .parallax__banner {
+        transform: translateZ(1px) scale(2);
+      }
+      .banner__text {
+        margin-top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="view">
+      <nav class="menu">
+        <div class="menu__hamburger">
+          <span></span><span></span> <span></span><span></span> <span></span><span></span>
+        </div>
+      </nav>
+
+      <aside class="contact"><img src="image/goToContactUs.png" alt="" /></aside>
+
+      <article class="welcome">
+        <figure class="center">
+          <div class="center__line"></div>
+          <img src="image/header_photo_foreground.png" alt="" />
+          <div class="center__line"></div>
+        </figure>
+        <img class="center__arrow" src="image/arrow.png" alt="" />
+      </article>
+      <article class="intro container">
+        <div class="parallax__container">
+          <img
+            class="title"
+            src="image/banner_title.png"
+          />
+        <figure class="banner">
+            <div class="parallax__view parallax__base"><img src="image/banner_img1.png" alt="" /></div>
+          </div>
+          <section class="banner__text">
+            <div class="parallax__container">
+              <div class="parallax__view parallax__title">
+                <h2 class="banner__text__title">
+                  從日常<br />
+                  實現藝術<br />
+                  從藝術<br />
+                  反思生活
+                </h2>
+                <div class="banner__line"></div>
+              </div>
+              <div class="parallax__view"><h5 class="banner__text__items">攝影 造型 動態影像 設計</h5></div>
+            </div>
+          </section>
+        </figure>
+        <figure class="dream">
+          <div class="dream__images">
+            <img src="image/banner_img41.png" alt="" /> <img src="image/banner_img42.png" alt="" />
+            <img src="image/banner_img43.png" alt="" />
+          </div>
+          <section class="dream__text">
+            <h2 class="dream__text__title">
+              完成人對<br />
+              自我實現的<br />
+              一種夢想。
+            </h2>
+            <h4 class="dream__text__subtitle">
+              將素人大眾<br />
+              與高端時尚的<br />
+              界線拉近。
+            </h4>
+            <div class="dream__line"></div>
+            <p class="dream__text__description">
+              「可畏工作」從平面攝影起手，將彩妝造型，服飾設計，
+              平面設計與動態影像等美學專業領域連結、柔和並重塑，皆由顛覆傳統婚紗照以「取得邏輯」的
+              市場常態，發展成跨領域的「製成邏輯」全新創作團隊，將素人大眾與高端時尚的界線不斷拉近，
+              藉此完成人對自我展現的各種「夢想」
+            </p>
+          </section>
+        </figure>
+      </article>
+    </div>
+    <!--
+      <div
+        class="parallax-container"
+        data-parallax="scroll"
+        data-positionX="0"
+        data-positionY="0"
+        data-zIndex="200"
+        data-bleed="10"
+        data-image-src="https://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg"
+        data-natural-width="1400"
+        data-natural-height="900"
+        style="height: 448px;"
+      >
+        <div class="container"><span>123</span></div>
+      </div>
+    -->
+  </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="plugins/parallax.min.js"></script>
+<script src="./js/all.js"></script>

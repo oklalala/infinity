@@ -1,0 +1,340 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.menu__hamburger {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 39px;
+  height: 19px;
+  background: red;
+}
+@media screen and (max-width: 600px) {
+  .menu__hamburger {
+    top: 35px;
+    left: 20px;
+  }
+}
+
+.contact {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    display: none;
+  }
+}
+.contact img {
+  width: 100%;
+}
+
+.welcome {
+  background-image: url("../image/header_photo_background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  outline: orange 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+.center__line {
+  background: white;
+  width: 175px;
+  height: 2px;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .center__line {
+    display: none;
+  }
+}
+.center img {
+  width: 510px;
+}
+@media screen and (max-width: 600px) {
+  .center img {
+    width: 335px;
+  }
+}
+.center__arrow {
+  width: 24px;
+  height: 34px;
+  position: absolute;
+  bottom: 80px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.intro {
+  text-align: center;
+}
+.intro .title {
+  padding-top: 40px;
+  padding-bottom: 143px;
+}
+.intro .title img {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .intro .title {
+    width: 37%;
+    padding-bottom: 35px;
+  }
+}
+
+.container {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner__line {
+  height: 4px;
+  width: 36px;
+  margin: 20px 0px;
+  background: black;
+  display: inline-block;
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .banner__line {
+    height: 2px;
+    width: 21px;
+  }
+}
+.banner__text {
+  margin-top: -60px;
+  text-align: right;
+  padding-right: 110px;
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 600px) {
+  .banner__text {
+    padding-right: 10px;
+    padding-bottom: 150px;
+  }
+}
+.banner__text__title {
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 600px) {
+  .banner__text__title {
+    font-size: 21px;
+    line-height: 35px;
+  }
+}
+.banner__text__subtitle {
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .banner__text__subtitle {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+}
+
+.dream {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .dream {
+    flex-direction: column;
+  }
+}
+.dream__images {
+  position: relative;
+  width: 390px;
+}
+@media screen and (max-width: 600px) {
+  .dream__images {
+    width: 120px;
+    margin-left: 100px;
+  }
+}
+.dream__images img {
+  position: absolute;
+  width: 390px;
+}
+@media screen and (max-width: 600px) {
+  .dream__images img {
+    width: 120px;
+  }
+}
+.dream__images img:nth-child(1) {
+  position: relative;
+}
+.dream__images img:nth-child(2) {
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+}
+@media screen and (max-width: 600px) {
+  .dream__images img:nth-child(2) {
+    top: 50px;
+    left: 50px;
+  }
+}
+.dream__images img:nth-child(3) {
+  top: 200px;
+  left: 200px;
+  padding-bottom: 67px;
+  z-index: -2;
+}
+@media screen and (max-width: 600px) {
+  .dream__images img:nth-child(3) {
+    top: 100px;
+    left: 100px;
+    padding-bottom: 0;
+  }
+}
+.dream__line {
+  height: 4px;
+  width: 36px;
+  margin: 50px 0px;
+  background: black;
+  display: inline-block;
+  text-align: right;
+}
+
+.dream__text {
+  padding-left: 70px;
+  text-align: left;
+  position: relative;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .dream__text {
+    padding-top: 80px;
+    padding-left: 0;
+  }
+}
+.dream__text__title {
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 600px) {
+  .dream__text__title {
+    font-size: 21px;
+    line-height: 35px;
+    letter-spacing: 2px;
+  }
+}
+.dream__text__subtitle {
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 80px;
+  left: 320px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 600px) {
+  .dream__text__subtitle {
+    top: 120px;
+    left: 200px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+}
+.dream__text__description {
+  width: 325px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 600px) {
+  .dream__text__description {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 100px;
+  }
+}
