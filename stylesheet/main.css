@@ -57,3 +57,114 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.intro {
+  text-align: center;
+}
+.intro .title {
+  padding-top: 40px;
+  padding-bottom: 143px;
+}
+
+.container {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner__line {
+  height: 4px;
+  width: 36px;
+  margin: 20px 0px;
+  background: black;
+  display: inline-block;
+  text-align: right;
+}
+.banner__text {
+  outline: 1px red solid;
+  margin-top: -60px;
+  text-align: right;
+  padding-right: 110px;
+  padding-bottom: 200px;
+}
+.banner__text__title {
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: 2px;
+}
+.banner__text__subtitle {
+  font-size: 14px;
+}
+
+.dream {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.dream__images {
+  outline: 2px dashed blue;
+  position: relative;
+  width: 390px;
+}
+.dream__images img {
+  position: absolute;
+  width: 390px;
+}
+.dream__images img:nth-child(1) {
+  position: relative;
+}
+.dream__images img:nth-child(2) {
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+}
+.dream__images img:nth-child(3) {
+  top: 200px;
+  left: 200px;
+  z-index: -2;
+}
+.dream__line {
+  height: 4px;
+  width: 36px;
+  margin: 50px 0px;
+  background: black;
+  display: inline-block;
+  text-align: right;
+}
+
+.dream__text {
+  outline: green 1px dotted;
+  padding-left: 70px;
+  text-align: left;
+  position: relative;
+  width: 50%;
+}
+.dream__text__title {
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: 3px;
+}
+.dream__text__subtitle {
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 80px;
+  left: 320px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.dream__text__description {
+  width: 325px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
