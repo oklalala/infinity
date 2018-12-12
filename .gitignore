@@ -2,3 +2,5 @@ quiz_web_layout
 .sass-cache
 
 test.*
+.DS_Store
+ 
