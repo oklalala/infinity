@@ -29,13 +29,33 @@
         transform: translateZ(0px);
       }
       .parallax__title {
-        transform: translateZ(-0.5px) scale(1.5);
+        transform: translateZ(0.3px) scale(0.8);
+        z-index: 10;
+        
       }
       .parallax__banner {
-        transform: translateZ(1px) scale(2);
+        transform: translateZ(-1px) scale(2);
       }
-      .banner__text {
-        margin-top: 300px;
+      .banner__text__title {
+        width: 300px;
+        height: 99px;
+        left: 56vw;
+        top: 10vh;
+      }
+      .dream__text__title{
+        width: 300px;
+        height: 99px;
+        left: 20vw;
+        top: 12vh;
+      }
+      .banner__text{
+        padding-bottom: 0;
+      }
+      .banner__text__items{
+        width: 300px;
+        height: 99px;
+        left: 66vw;
+        top: 62vh;
       }
     </style>
   </head>
@@ -45,6 +65,21 @@
         <div class="menu__hamburger">
           <span></span><span></span> <span></span><span></span> <span></span><span></span>
         </div>
+        <section id="nav">
+          <!-- <img src='LibraryTransparent.png' onmouseover="this.src='LibraryHoverTrans.png';" onmouseout="this.src='LibraryTransparent.png';"/> -->
+          <img src="image/hausennCamp 2.png" alt="" class="title">
+          <img src="image/hausenn 2.png" alt="" class="subtitle"> |
+          <img src="image/kerway 2.png" alt="" class="subtitle"> |
+          <img src="image/sonstay 2.png" alt="" class="subtitle">
+          <img src="image/works 2.png" alt="">
+          <img src="image/news 2.png" alt="">
+          <div class="icon">
+            <i class="fab fa-vimeo-v"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-envelope"></i>
+          </div>
+        </section>
       </nav>
 
       <aside class="contact"><img src="image/goToContactUs.png" alt="" /></aside>
@@ -57,8 +92,8 @@
         </figure>
         <img class="center__arrow" src="image/arrow.png" alt="" />
       </article>
+      <div class="parallax__container">
       <article class="intro container">
-        <div class="parallax__container">
           <img
             class="title"
             src="image/banner_title.png"
@@ -68,8 +103,8 @@
           </div>
           <section class="banner__text">
             <div class="parallax__container">
-              <div class="parallax__view parallax__title">
-                <h2 class="banner__text__title">
+              <div class="banner__text__title parallax__view parallax__title">
+                <h2>
                   從日常<br />
                   實現藝術<br />
                   從藝術<br />
@@ -77,7 +112,7 @@
                 </h2>
                 <div class="banner__line"></div>
               </div>
-              <div class="parallax__view"><h5 class="banner__text__items">攝影 造型 動態影像 設計</h5></div>
+              <div class="parallax__view parallax__base banner__text__items"><h5>攝影 造型 動態影像 設計</h5></div>
             </div>
           </section>
         </figure>
@@ -87,7 +122,7 @@
             <img src="image/banner_img43.png" alt="" />
           </div>
           <section class="dream__text">
-            <h2 class="dream__text__title">
+            <h2 class="dream__text__title parallax__view parallax__title">
               完成人對<br />
               自我實現的<br />
               一種夢想。
@@ -108,22 +143,6 @@
         </figure>
       </article>
     </div>
-    <!--
-      <div
-        class="parallax-container"
-        data-parallax="scroll"
-        data-positionX="0"
-        data-positionY="0"
-        data-zIndex="200"
-        data-bleed="10"
-        data-image-src="https://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg"
-        data-natural-width="1400"
-        data-natural-height="900"
-        style="height: 448px;"
-      >
-        <div class="container"><span>123</span></div>
-      </div>
-    -->
   </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
