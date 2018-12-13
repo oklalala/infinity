@@ -1,15 +1,26 @@
 .banner_hausenn_logo {
     margin-top: 50px;
     text-align: center;
+    @media screen and (max-width: 375px) {
+        margin-top: 20px;
+    }
 
     img {
         max-width: 200px;
+
+        @media screen and (max-width: 375px) {
+            max-width: 125px;
+        }
     }
 }
 
 #hausenn_banner {
     display: flex;
     margin-top: 205px;
+
+    @media screen and (max-width: 375px) {
+        margin-top: 20px;
+    }
 }
 
 #deconstruct {
@@ -31,15 +42,32 @@
     margin-top: 75px;
     margin-right: 73px;
     max-width: 27px;
-    img{
+
+    img {
         max-width: 100%;
     }
+
+    @media screen and (max-width: 375px) {
+        margin-top: 15px;
+        margin-right: 10px;
+        max-width: 10px;
+    }
 }
-.contant{
+
+.contant {
     max-width: 100px;
-    img{
+
+    img {
         filter: brightness(0%);
-        max-width: 100%;
+        visibility: hidden;
+
+        @media screen and (max-width: 375px) {
+            max-width: 20px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        max-width: 20px;
     }
 }
 
@@ -72,7 +100,8 @@
 }
 
 #interweaving {
-    margin:135px 100px 360px 100px;
+    margin: 135px 100px 360px 100px;
+
     &_title {
         margin-left: 275px;
         text-transform: uppercase;
@@ -82,19 +111,21 @@
         font-weight: bold;
         margin-bottom: 20px;
     }
-    &_subtitle{
+
+    &_subtitle {
         margin-left: 275px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    &_line{
+    &_line {
         background-color: black;
         width: 55px;
         height: 7px;
     }
-    &_text{
+
+    &_text {
         text-transform: uppercase;
         letter-spacing: 3px;
     }
