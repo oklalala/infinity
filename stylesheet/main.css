@@ -7,13 +7,31 @@
   max-width: 1166px;
 }
 
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 345px;
+  }
+}
+
 .banner_hausenn_logo {
   margin-top: 50px;
   text-align: center;
 }
 
+@media screen and (max-width: 375px) {
+  .banner_hausenn_logo {
+    margin-top: 20px;
+  }
+}
+
 .banner_hausenn_logo img {
   max-width: 200px;
+}
+
+@media screen and (max-width: 375px) {
+  .banner_hausenn_logo img {
+    max-width: 125px;
+  }
 }
 
 #hausenn_banner {
@@ -21,6 +39,12 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 205px;
+}
+
+@media screen and (max-width: 375px) {
+  #hausenn_banner {
+    margin-top: 20px;
+  }
 }
 
 #deconstruct {
@@ -48,6 +72,14 @@
   max-width: 100%;
 }
 
+@media screen and (max-width: 375px) {
+  #half_logo {
+    margin-top: 15px;
+    margin-right: 10px;
+    max-width: 10px;
+  }
+}
+
 .contant {
   max-width: 100px;
 }
@@ -55,7 +87,19 @@
 .contant img {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
-  max-width: 100%;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  .contant img {
+    max-width: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contant {
+    max-width: 20px;
+  }
 }
 
 #descript {
