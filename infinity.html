@@ -22,57 +22,68 @@
   <title>Infinity</title>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-  <!-- <style>
-      .view {
-        perspective: 1px;
-        height: 100vh;
-        overflow-x: hidden;
-      }
-      .parallax__container {
-        position: relative;
-        height: 100vh;
-        transform-style: preserve-3d;
-      }
-      .parallax__view {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-      .parallax__base {
-        transform: translateZ(0px);
-      }
-      .parallax__title {
-        transform: translateZ(0.3px) scale(0.8);
-        z-index: 10;
-        
-      }
-      .parallax__banner {
-        transform: translateZ(-1px) scale(2);
-      }
-      .banner__text__title {
-        width: 300px;
-        height: 99px;
-        left: 56vw;
-        top: 10vh;
-      }
-      .dream__text__title{
-        width: 300px;
-        height: 99px;
-        left: 20vw;
-        top: 12vh;
-      }
-      .banner__text{
-        padding-bottom: 0;
-      }
-      .banner__text__items{
-        width: 300px;
-        height: 99px;
-        left: 66vw;
-        top: 62vh;
-      }
-    </style> -->
+  <script src="./plugins/jquery.scrollify.js"></script>
+  <style>
+    .parallax__section {
+      perspective: 1px;
+      height: 2400px;
+      overflow-x: hidden;
+      z-index: 500;
+    }
+
+    .parallax__container {
+      position: relative;
+      height: 100vh;
+      transform-style: preserve-3d;
+    }
+
+    .parallax__view {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .parallax__base {
+      transform: translateZ(0px);
+    }
+
+    .parallax__title {
+      transform: translateZ(0.3px) scale(0.8);
+      z-index: 10;
+
+    }
+
+    .parallax__banner {
+      transform: translateZ(-1px) scale(2);
+    }
+
+    .banner__text__title {
+      width: 300px;
+      height: 99px;
+      left: 56vw;
+      top: 10vh;
+    }
+
+    .dream__text__title {
+      width: 300px;
+      height: 99px;
+      left: 20vw;
+      top: 12vh;
+    }
+
+    .banner__text {
+      padding-bottom: 0;
+    }
+
+    .banner__text__items {
+      width: 300px;
+      height: 99px;
+      left: 66vw;
+      top: 62vh;
+    }
+  </style>
   <style>
     .loading {
       background-color: #000;
@@ -150,7 +161,7 @@
 </head>
 
 <body>
-  <div class="loading">
+  <!-- <div class="loading">
     <div class="loading__view">
       <img
         src="./image/loading.png"
@@ -159,57 +170,62 @@
       <div class="loading__white">
       </div>
     </div>
-  </div>
-  <div class="view">
-    <nav class="menu">
-      <div class="menu__hamburger">
-        <span></span><span></span><span></span><span></span> <span></span><span></span>
-      </div>
-      <section id="nav">
-        <!-- <img src='LibraryTransparent.png' onmouseover="this.src='LibraryHoverTrans.png';" onmouseout="this.src='LibraryTransparent.png';"/> -->
-        <img
-          src="image/hausennCamp 2.png"
-          alt=""
-          class="title"
-        >
-        <img
-          src="image/hausenn 2.png"
-          alt=""
-          class="subtitle"
-        > |
-        <img
-          src="image/kerway 2.png"
-          alt=""
-          class="subtitle"
-        > |
-        <img
-          src="image/sonstay 2.png"
-          alt=""
-          class="subtitle"
-        >
-        <img
-          src="image/works 2.png"
-          alt=""
-        >
-        <img
-          src="image/news 2.png"
-          alt=""
-        >
-        <div class="icon">
-          <i class="fab fa-vimeo-v"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="far fa-envelope"></i>
-        </div>
-      </section>
-    </nav>
+  </div> -->
 
-    <aside class="contact"><img
-        src="image/goToContactUs.png"
+  <nav class="menu">
+    <div class="menu__hamburger">
+      <span></span><span></span><span></span><span></span> <span></span><span></span>
+    </div>
+    <section id="nav">
+      <!-- <img src='LibraryTransparent.png' onmouseover="this.src='LibraryHoverTrans.png';" onmouseout="this.src='LibraryTransparent.png';"/> -->
+      <img
+        src="image/hausennCamp 2.png"
         alt=""
-      /></aside>
+        class="title"
+      >
+      <img
+        src="image/hausenn 2.png"
+        alt=""
+        class="subtitle"
+      > |
+      <img
+        src="image/kerway 2.png"
+        alt=""
+        class="subtitle"
+      > |
+      <img
+        src="image/sonstay 2.png"
+        alt=""
+        class="subtitle"
+      >
+      <img
+        src="image/works 2.png"
+        alt=""
+      >
+      <img
+        src="image/news 2.png"
+        alt=""
+      >
+      <div class="icon">
+        <i class="fab fa-vimeo-v"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+    </section>
+  </nav>
 
-    <article class="welcome">
+  <aside class="contact">
+    <img
+      src="image/goToContactUs.png"
+      alt=""
+    />
+  </aside>
+  <div class="view">
+    <article
+      class="scroll__section welcome"
+      data-section-name="welcome"
+    >
       <figure class="center">
         <div class="center__line"></div>
         <img
@@ -224,166 +240,177 @@
         alt=""
       />
     </article>
-    <div class="parallax__container">
-      <article class="intro container">
-        <img
-          class="title"
-          src="image/banner_title.png"
-        />
-        <figure class="banner">
-          <div class="parallax__view parallax__base"><img
-              src="image/banner_img1.png"
-              alt=""
-            /></div>
-    </div>
-    <section class="banner__text">
-      <div class="parallax__container">
-        <div class="banner__text__title parallax__view parallax__title">
-          <h2>
-            從日常<br />
-            實現藝術<br />
-            從藝術<br />
-            反思生活
-          </h2>
-          <div class="banner__line"></div>
-        </div>
-        <div class="parallax__view parallax__base banner__text__items">
-          <h5>攝影 造型 動態影像 設計</h5>
-        </div>
-      </div>
-    </section>
-    </figure>
-    <figure class="dream">
-      <div class="dream__images">
-        <img
-          src="image/banner_img41.png"
-          alt=""
-        /> <img
-          src="image/banner_img42.png"
-          alt=""
-        />
-        <img
-          src="image/banner_img43.png"
-          alt=""
-        />
-      </div>
-      <section class="dream__text">
-        <h2 class="dream__text__title parallax__view parallax__title">
-          完成人對<br />
-          自我實現的<br />
-          一種夢想。
-        </h2>
-        <h4 class="dream__text__subtitle">
-          將素人大眾<br />
-          與高端時尚的<br />
-          界線拉近。
-        </h4>
-        <div class="dream__line"></div>
-        <p class="dream__text__description">
-          「可畏工作」從平面攝影起手，將彩妝造型，服飾設計，
-          平面設計與動態影像等美學專業領域連結、柔和並重塑，皆由顛覆傳統婚紗照以「取得邏輯」的
-          市場常態，發展成跨領域的「製成邏輯」全新創作團隊，將素人大眾與高端時尚的界線不斷拉近，
-          藉此完成人對自我展現的各種「夢想」
-        </p>
-      </section>
-    </figure>
-    </article>
-  </div>
-
-  <article class="works">
-    <img
-      src="image/logo_2.png"
-      alt=""
-      class="works__title"
+    <article
+      class="scroll__section parallax__section"
+      data-section-name="parallax"
     >
-    <section class="works__text">
-      <div class="works__line"></div>
-      <h2 class="works__text__title">WORKS</h2>
-      <h3 class="works__text__subtitle">作品</h3>
-    </section>
-    <section class="grid container">
-      <div class="grid__item">
-        <img
-          src="image/kerway 2.png"
-          alt=""
-        >
+
+      <div class="parallax__container">
+        <article class="intro container">
+          <img
+            class="title"
+            src="image/banner_title.png"
+          />
+          <figure class="banner">
+            <div class="parallax__view parallax__base"><img
+                src="image/banner_img1.png"
+                alt=""
+              /></div>
+          </figure>
+        </article>
       </div>
-      <div class="grid__item">
-        <img
-          src="image/banner_img1 2.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/arrow.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/goToContactUs 3.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/banner_title 2.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/kerway 2.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/banner_img1 2.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/arrow.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/goToContactUs 3.png"
-          alt=""
-        >
-      </div>
-      <div class="grid__item">
-        <img
-          src="image/banner_title 2.png"
-          alt=""
-        >
-      </div>
-    </section>
-    <aside class="works__aside">
-      <div class="works__home">
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-        <div class="works__home__icon"></div>
-      </div>
-      <ul class="works__check">
-        <li class="works__check__text">工作項目</li>
-        <li class="works__check__text">攝影師</li>
-        <li class="works__check__text">造型師</li>
-        <li class="works__check__text">導演</li>
-      </ul>
-      <div class="works__toTop"></div>
-    </aside>
-  </article>
+      <section class="banner__text">
+        <div class="parallax__container">
+          <div class="banner__text__title parallax__view parallax__title">
+            <h2>
+              從日常<br />
+              實現藝術<br />
+              從藝術<br />
+              反思生活
+            </h2>
+            <div class="banner__line"></div>
+          </div>
+          <div class="parallax__view parallax__base banner__text__items">
+            <h5>攝影 造型 動態影像 設計</h5>
+          </div>
+        </div>
+      </section>
+      </figure>
+      <figure class="dream">
+        <div class="dream__images">
+          <img
+            src="image/banner_img41.png"
+            alt=""
+          /> <img
+            src="image/banner_img42.png"
+            alt=""
+          />
+          <img
+            src="image/banner_img43.png"
+            alt=""
+          />
+        </div>
+        <section class="dream__text">
+          <h2 class="dream__text__title parallax__view parallax__title">
+            完成人對<br />
+            自我實現的<br />
+            一種夢想。
+          </h2>
+          <h4 class="dream__text__subtitle">
+            將素人大眾<br />
+            與高端時尚的<br />
+            界線拉近。
+          </h4>
+          <div class="dream__line"></div>
+          <p class="dream__text__description">
+            「可畏工作」從平面攝影起手，將彩妝造型，服飾設計，
+            平面設計與動態影像等美學專業領域連結、柔和並重塑，皆由顛覆傳統婚紗照以「取得邏輯」的
+            市場常態，發展成跨領域的「製成邏輯」全新創作團隊，將素人大眾與高端時尚的界線不斷拉近，
+            藉此完成人對自我展現的各種「夢想」
+          </p>
+        </section>
+      </figure>
+    </article>
+
+    <article
+      class="scroll__section works"
+      data-section-name="works"
+    >
+      <img
+        src="image/logo_2.png"
+        alt=""
+        class="works__title"
+      >
+      <section class="works__text">
+        <div class="works__line"></div>
+        <h2 class="works__text__title">WORKS</h2>
+        <h3 class="works__text__subtitle">作品</h3>
+      </section>
+      <section class="grid container">
+        <div class="grid__item">
+          <img
+            src="image/kerway 2.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/banner_img1 2.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/arrow.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/goToContactUs 3.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/banner_title 2.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/kerway 2.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/banner_img1 2.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/arrow.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/goToContactUs 3.png"
+            alt=""
+          >
+        </div>
+        <div class="grid__item">
+          <img
+            src="image/banner_title 2.png"
+            alt=""
+          >
+        </div>
+      </section>
+      <aside class="works__aside">
+        <div class="works__home">
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+          <div class="works__home__icon"></div>
+        </div>
+        <ul class="works__check">
+          <li class="works__check__text">工作項目</li>
+          <li class="works__check__text">攝影師</li>
+          <li class="works__check__text">造型師</li>
+          <li class="works__check__text">導演</li>
+        </ul>
+        <div class="works__toTop"></div>
+      </aside>
+    </article>
+
+  </div>
   <script src="./js/all.js"></script>
 
 </body>
