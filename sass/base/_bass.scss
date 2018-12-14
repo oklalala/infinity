@@ -10,4 +10,15 @@
     @media screen and (max-width: 375px) {
         max-width: 345px;
     }
+
+    margin: 0 auto;
+}
+
+%center_line {
+    content: "";
+    background-color: white;
+    width: 175px;
+    height: 2px;
+    top: 50%;
+    position: absolute;
 }

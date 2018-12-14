@@ -7,7 +7,8 @@
   max-width: 1166px;
   margin: 0 auto;
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 376px) {
   .container {
     max-width: 345px;
   }
@@ -18,12 +19,56 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#hausenn_welcome img {
-  display: block;
-  width: 510px;
-  height: 510px;
-  margin: 0 auto;
+
+#welcome_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome_center .center_logo {
+  max-width: 510px;
+}
+
+#welcome_center .center_logo img {
+  width: 100%;
+}
+
+#welcome_center .center_line {
+  background: white;
+  width: 175px;
+  height: 2px;
+}
+
+@media screen and (max-width: 376px) {
+  #welcome_center .center_line {
+    display: none;
+  }
+}
+
+.down_arrow {
+  height: 34px;
+  width: auto;
+  text-align: center;
+}
+
+.down_arrow img {
+  height: 100%;
 }
 
 .banner_hausenn_logo {
@@ -226,8 +271,14 @@
   top: 0;
   bottom: 0;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media screen and (max-width: 600px) {
   .contact {
     display: none;
@@ -245,15 +296,26 @@
   height: 100vh;
   width: 100%;
   outline: orange 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .center__line {
   background: white;
   width: 175px;
@@ -281,18 +343,17 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .intro {
   text-align: center;
 }
 .intro .title {
-  padding-top: 40px;
-  padding-bottom: 143px;
-}
-.intro .title img {
-  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 175px;
+  width: 192px;
 }
 @media screen and (max-width: 600px) {
   .intro .title {
@@ -316,14 +377,14 @@
 }
 .banner img {
   width: 100%;
+  padding-bottom: 300px;
 }
 .banner__line {
+  position: absolute;
+  display: none;
   height: 4px;
   width: 36px;
-  margin: 20px 0px;
   background: black;
-  display: inline-block;
-  text-align: right;
 }
 @media screen and (max-width: 600px) {
   .banner__line {
@@ -332,18 +393,11 @@
   }
 }
 .banner__text {
-  margin-top: -60px;
   text-align: right;
-  padding-right: 110px;
-  padding-bottom: 200px;
-}
-@media screen and (max-width: 600px) {
-  .banner__text {
-    padding-right: 10px;
-    padding-bottom: 150px;
-  }
 }
 .banner__text__title {
+  position: absolute;
+  display: none;
   font-size: 44px;
   line-height: 65px;
   letter-spacing: 2px;
@@ -355,6 +409,8 @@
   }
 }
 .banner__text__subtitle {
+  padding-bottom: 200px;
+  padding-right: 210px;
   font-size: 14px;
 }
 @media screen and (max-width: 600px) {
@@ -376,8 +432,7 @@
   }
 }
 .dream__images {
-  position: relative;
-  width: 390px;
+  width: 50%;
 }
 @media screen and (max-width: 600px) {
   .dream__images {
@@ -396,6 +451,7 @@
 }
 .dream__images img:nth-child(1) {
   position: relative;
+  padding-bottom: 267px;
 }
 .dream__images img:nth-child(2) {
   top: 100px;
@@ -411,7 +467,6 @@
 .dream__images img:nth-child(3) {
   top: 200px;
   left: 200px;
-  padding-bottom: 67px;
   z-index: -2;
 }
 @media screen and (max-width: 600px) {
@@ -422,12 +477,10 @@
   }
 }
 .dream__line {
+  position: absolute;
   height: 4px;
   width: 36px;
-  margin: 50px 0px;
   background: black;
-  display: inline-block;
-  text-align: right;
 }
 
 .dream__text {
@@ -443,6 +496,7 @@
   }
 }
 .dream__text__title {
+  position: absolute;
   font-size: 44px;
   line-height: 65px;
   letter-spacing: 3px;
@@ -457,8 +511,6 @@
 .dream__text__subtitle {
   position: absolute;
   writing-mode: vertical-rl;
-  top: 80px;
-  left: 320px;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 2px;
@@ -473,6 +525,7 @@
   }
 }
 .dream__text__description {
+  padding-top: 360px;
   width: 325px;
   font-size: 14px;
   line-height: 24px;

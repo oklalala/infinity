@@ -5,11 +5,9 @@
 .intro {
   text-align: center;
   .title {
-    padding-top: 40px;
-    padding-bottom: 143px;
-    img {
-      width: 100%;
-    }
+    padding-top: 50px;
+    padding-bottom: 175px;
+    width:192px;
     @media screen and (max-width: 600px) {
       width: 37%;
       padding-bottom: 35px;
@@ -29,33 +27,40 @@
   position: relative;
   img {
     width: 100%;
+    padding-bottom: 300px;
   }
   &__line{
+    position: absolute;///////////////
+    display: none;
     height: 4px;
     width: 36px;
     @media screen and (max-width: 600px) {
       height: 2px;
       width: 21px;
     }    
-    margin: 20px 0px;
+    // margin: 20px 0px;
     background: black;
-    display: inline-block;
-    text-align: right;
+    // display: inline-block;
+    // text-align: right;
   }
   &__text {
     // outline: 1px red solid;
-    margin-top: -60px; 
+    // margin-top: -60px; 
     text-align: right;
-    padding-right: 110px;
-    padding-bottom: 200px;
-    
+    // padding-right: 110px;
+    // padding-bottom: 200px;
     @media screen and (max-width: 600px) {
-      padding-right: 10px;
-      padding-bottom: 150px;
-      
+      // padding-right: 10px;
+      // padding-bottom: 150px;
     } 
-         
+    
     &__title{
+      position: absolute;//////////////
+      display: none;
+      // z-index: 1;
+      // right: 200px; /////需要推！！！！
+      // bottom: 0; /////需要推！！！！
+      
       font-size: 44px;
       line-height: 65px;
       letter-spacing: 2px;
@@ -65,6 +70,8 @@
       }
     }
     &__subtitle {
+      padding-bottom: 200px;
+      padding-right: 210px;
       font-size: 14px;
       @media screen and (max-width: 600px) {
         font-size: 12px;
@@ -84,8 +91,8 @@
   }  
   &__images {
     // outline: 2px dashed blue;
-    position: relative;
-    width: 390px;
+    // position: relative;
+    width: 50%;
     @media screen and (max-width: 600px) {
       width: 120px;
       margin-left: 100px;
@@ -99,7 +106,7 @@
     }
     img:nth-child(1) {
       position: relative;
-      
+      padding-bottom: 267px;
     }
     img:nth-child(2) {
       top: 100px;
@@ -113,7 +120,6 @@
     img:nth-child(3) {
       top: 200px;
       left: 200px;
-      padding-bottom: 67px;
       @media screen and (max-width: 600px) {
         top: 100px;
         left: 100px;
@@ -123,12 +129,12 @@
     }
   }
   &__line{
+    position: absolute; ///////////
     height: 4px;
     width: 36px;
-    margin: 50px 0px;
+    // margin: 50px 0px;
     background: black;
-    display: inline-block;
-    text-align: right;
+    // display: inline-block;
   }
 }
 
@@ -143,6 +149,8 @@
   position: relative;
   width: 50%;
   &__title {
+    position: absolute; ////////////
+
     font-size: 44px;
     line-height: 65px;
     letter-spacing: 3px;
@@ -153,10 +161,11 @@
     }    
   }
   &__subtitle {
-    position: absolute;
+    position: absolute; /////////////
+
     writing-mode: vertical-rl;
-    top: 80px;
-    left: 320px;
+    // top: 80px;
+    // left: 320px;
 
     font-size: 18px;
     line-height: 30px;
@@ -170,7 +179,9 @@
     }    
   }
   &__description {
+    padding-top: 360px;
     width: 325px;
+    
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 2px;
