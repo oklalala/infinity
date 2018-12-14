@@ -2,14 +2,25 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     max-width: 1366px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 .container {
     max-width: 1166px;
-    margin: 0 auto;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 376px) {
         max-width: 345px;
     }
+    margin: 0 auto;
+}
+
+%center_line {
+    content: "";
+    background-color: white;
+    width: 175px;
+    height: 2px;
+    top:50%;
+    position: absolute;
 }
