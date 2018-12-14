@@ -1,0 +1,97 @@
+.works {
+  background: #000;
+  color:white;
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  &__title{
+    padding-bottom: 175px;
+  }
+  &__text {
+    text-align: left;
+    position: sticky;
+    padding-left: 50px;
+    top: 110px;
+    z-index: 3;
+    &__title {
+      font-family: open sans;
+      font-weight: bold;
+      font-size: 40px;
+      letter-spacing: 4px;
+      margin: 30px 0;
+    }
+    &__subtitle {
+      font-family: Noto sans;
+      font-weight: bold;
+      font-size: 32px;
+      letter-spacing: 4px;
+      margin: 30px 0;
+    }
+  }
+
+  &__line {
+    width: 150px;
+    height: 16px;
+    background: white;
+  }
+  &__home {
+    width: 48px;
+    padding: 12px 0;
+    &__icon {
+      width: 10px;
+      height: 10px;
+      float:left;
+      background: white;
+      margin:2px;
+    }
+  }
+  &__aside {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 100px;
+    background: #000;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__check {
+    width: 840px;
+    text-align: right;
+    &__text {
+      text-align: left;
+      display: inline-block;
+      border-bottom: 12px solid white;
+      width: 170px;
+      margin-right: 45px;
+      font-size: 16px;
+      letter-spacing: 4px;
+      line-height: 54px;
+    }
+    &__text:last-child{
+      margin-right: 0;
+    }
+  }
+  &__toTop {
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.grid {
+    height: 1200px;
+    background:linear-gradient(red,blue);
+    margin: -100px auto 0;
+    &__item {
+      width: 350px;
+      img {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
