@@ -6,7 +6,13 @@ window.addEventListener('load', function (event) {
 });
 
 $(function () {
-
+  $.scrollify({
+    section: ".scroll__section",
+    sectionName: "section-name",
+    scrollSpeed: 1100,
+    overflowScroll: true,
+    setHeights: false
+  });
 });
 
 $('.grid').masonry({

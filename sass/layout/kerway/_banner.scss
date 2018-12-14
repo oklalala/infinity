@@ -4,10 +4,12 @@
 
 .intro {
   text-align: center;
+
   .title {
     padding-top: 50px;
     padding-bottom: 175px;
-    width:192px;
+    width: 192px;
+
     @media screen and (max-width: 600px) {
       width: 37%;
       padding-bottom: 35px;
@@ -17,67 +19,78 @@
 
 .container {
   width: calc(100% - 200px);
+
   @media screen and (max-width: 600px) {
-    width:calc(100% - 40px);
+    width: calc(100% - 40px);
   }
-  margin: 0 auto; 
+
+  margin: 0 auto;
 }
 
 .banner {
   position: relative;
+
   img {
     width: 100%;
     padding-bottom: 300px;
   }
-  &__line{
-    position: absolute;///////////////
+
+  &__line {
+    position: absolute; ///////////////
     display: none;
     height: 4px;
     width: 36px;
+
     @media screen and (max-width: 600px) {
       height: 2px;
       width: 21px;
-    }    
+    }
+
     // margin: 20px 0px;
     background: black;
     // display: inline-block;
     // text-align: right;
   }
+
   &__text {
     // outline: 1px red solid;
     // margin-top: -60px; 
     text-align: right;
+
     // padding-right: 110px;
     // padding-bottom: 200px;
     @media screen and (max-width: 600px) {
       // padding-right: 10px;
       // padding-bottom: 150px;
-    } 
-    
-    &__title{
-      position: absolute;//////////////
-      display: none;
+    }
+
+    &__title {
+      position: absolute; //////////////
+      //display: none;
       // z-index: 1;
       // right: 200px; /////需要推！！！！
       // bottom: 0; /////需要推！！！！
-      
+
       font-size: 44px;
       line-height: 65px;
       letter-spacing: 2px;
+
       @media screen and (max-width: 600px) {
         font-size: 21px;
         line-height: 35px;
       }
     }
+
     &__subtitle {
       padding-bottom: 200px;
       padding-right: 210px;
       font-size: 14px;
+
       @media screen and (max-width: 600px) {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: 3px;
-      }      
+      }
     }
   }
 }
@@ -86,49 +99,62 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
-  }  
+  }
+
   &__images {
     // outline: 2px dashed blue;
     // position: relative;
     width: 50%;
+
     @media screen and (max-width: 600px) {
       width: 120px;
       margin-left: 100px;
-    } 
-    img{
+    }
+
+    img {
       position: absolute;
       width: 390px;
+
       @media screen and (max-width: 600px) {
         width: 120px;
-      } 
+      }
     }
+
     img:nth-child(1) {
       position: relative;
       padding-bottom: 267px;
     }
+
     img:nth-child(2) {
       top: 100px;
       left: 100px;
+
       @media screen and (max-width: 600px) {
         top: 50px;
         left: 50px;
-      } 
+      }
+
       z-index: -1;
     }
+
     img:nth-child(3) {
       top: 200px;
       left: 200px;
+
       @media screen and (max-width: 600px) {
         top: 100px;
         left: 100px;
         padding-bottom: 0;
-      } 
+      }
+
       z-index: -2;
     }
   }
-  &__line{
+
+  &__line {
     position: absolute; ///////////
     height: 4px;
     width: 36px;
@@ -141,25 +167,30 @@
 .dream__text {
   // outline: green 1px dotted;
   padding-left: 70px;
+
   @media screen and (max-width: 600px) {
     padding-top: 80px;
     padding-left: 0;
-  }  
+  }
+
   text-align: left;
   position: relative;
   width: 50%;
+
   &__title {
     position: absolute; ////////////
 
     font-size: 44px;
     line-height: 65px;
     letter-spacing: 3px;
+
     @media screen and (max-width: 600px) {
       font-size: 21px;
       line-height: 35px;
       letter-spacing: 2px;
-    }    
+    }
   }
+
   &__subtitle {
     position: absolute; /////////////
 
@@ -170,25 +201,28 @@
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 2px;
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
       top: 120px;
       left: 200px;
       font-size: 12px;
       line-height: 24px;
       letter-spacing: 3px;
-    }    
+    }
   }
+
   &__description {
     padding-top: 360px;
     width: 325px;
-    
+
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 2px;
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
       font-size: 12px;
       line-height: 16px;
       padding-bottom: 100px;
-    }    
+    }
   }
 }

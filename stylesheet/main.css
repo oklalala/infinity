@@ -6,8 +6,9 @@
 .container {
   max-width: 1166px;
   margin: 0 auto;
+  margin: 0 auto;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .container {
     max-width: 345px;
   }
@@ -178,7 +179,6 @@
 }
 .banner__text__title {
   position: absolute;
-  display: none;
   font-size: 44px;
   line-height: 65px;
   letter-spacing: 2px;
