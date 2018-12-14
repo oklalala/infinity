@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-body {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1166px;
   margin: 0 auto;

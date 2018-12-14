@@ -2,7 +2,7 @@ const loading = document.querySelector('.loading');
 window.addEventListener('load', function (event) {
   setInterval(() => {
     loading.className += " animated fadeOut";
-  }, 10000);
+  }, 8000);
 });
 
 $(function () {
