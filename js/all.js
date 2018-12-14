@@ -1,13 +1,12 @@
-window.addEventListener('load', function(event) {
+const loading = document.querySelector('.loading');
+window.addEventListener('load', function (event) {
   setInterval(() => {
-    console.log('All resources finished loading!');
-  }, 5000);
+    loading.className += " animated fadeOut";
+  }, 10000);
 });
 
-$(function() {
-  $(window).scroll(function() {
-    var posTop = $('.view').scrollTop() - $('.container').offset().top;
-  });
+$(function () {
+
 });
 
 $('.grid').masonry({
