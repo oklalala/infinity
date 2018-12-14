@@ -1,6 +1,8 @@
 quiz_web_layout
 filter_demo
 .sass-cache
+stylesheet
+main.css
 
 test.*
 .DS_Store
