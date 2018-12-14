@@ -3,16 +3,14 @@
     padding: 0;
 }
 
-body {
-    max-width: 1366px;
-    margin: 0 auto;
-}
-
 .container {
     max-width: 1166px;
-    @media screen and (max-width: 376px) {
+    margin: 0 auto;
+
+    @media screen and (max-width: 375px) {
         max-width: 345px;
     }
+
     margin: 0 auto;
 }
 
@@ -21,6 +19,6 @@ body {
     background-color: white;
     width: 175px;
     height: 2px;
-    top:50%;
+    top: 50%;
     position: absolute;
 }
