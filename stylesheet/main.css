@@ -319,7 +319,7 @@
 }
 .intro .title {
   padding-top: 50px;
-  padding-bottom: 175px;
+  padding-bottom: 75px;
   width: 192px;
 }
 @media screen and (max-width: 600px) {
@@ -348,7 +348,6 @@
 }
 .banner__line {
   position: absolute;
-  display: none;
   height: 4px;
   width: 36px;
   background: black;
@@ -408,32 +407,18 @@
 }
 .dream__images img {
   position: absolute;
-  width: 390px;
+  width: 320px;
 }
 @media screen and (max-width: 600px) {
   .dream__images img {
     width: 120px;
   }
 }
-.dream__images img:nth-child(1) {
-  position: relative;
-  padding-bottom: 267px;
-}
-.dream__images img:nth-child(2) {
-  top: 100px;
-  left: 100px;
-  z-index: -1;
-}
 @media screen and (max-width: 600px) {
   .dream__images img:nth-child(2) {
     top: 50px;
     left: 50px;
   }
-}
-.dream__images img:nth-child(3) {
-  top: 200px;
-  left: 200px;
-  z-index: -2;
 }
 @media screen and (max-width: 600px) {
   .dream__images img:nth-child(3) {
@@ -447,6 +432,7 @@
   height: 4px;
   width: 36px;
   background: black;
+  display: none;
 }
 
 .dream__text {

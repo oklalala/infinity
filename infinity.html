@@ -24,13 +24,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
   <script src="./plugins/jquery.scrollify.js"></script>
   <style>
-    .parallax__section {
+    .view {
       perspective: 1px;
-      height: 2400px;
+      height: 100vh;
       overflow-x: hidden;
-      z-index: 500;
     }
-
+    .parallax__section{
+      height: 1200px;
+    }
     .parallax__container {
       position: relative;
       height: 100vh;
@@ -52,7 +53,10 @@
     .parallax__title {
       transform: translateZ(0.3px) scale(0.8);
       z-index: 10;
-
+    }
+    .parallax__subtitle {
+      transform: translateZ(0.4px) scale(0.7);
+      z-index: 10;
     }
 
     .parallax__banner {
@@ -63,26 +67,53 @@
       width: 300px;
       height: 99px;
       left: 56vw;
-      top: 10vh;
-    }
-
-    .dream__text__title {
-      width: 300px;
-      height: 99px;
-      left: 20vw;
-      top: 12vh;
+      top: 200vh;
     }
 
     .banner__text {
       padding-bottom: 0;
     }
 
+    .banner__line{
+      right: 1vw;
+      top: 43vh;
+      
+    }
+
     .banner__text__items {
+      position: absolute;
+      left: 75vw;
+      top: 256vh;
+    }
+    .dream__text__title {
       width: 300px;
       height: 99px;
-      left: 66vw;
-      top: 62vh;
+      left: 22vw;
+      top: 29vh;
+    }   
+    .dream__text__description{
+      left: 11vw;
+      top: 28vh;
+      position: absolute;
     }
+    .dream__images{
+      left: 69vw;
+      position: absolute;
+      top: 28vh;
+    }
+    .img__bottom{
+      left: 1vw;
+      top: 10vh;
+    }
+    .img__center{
+      left: -12vw;
+      top: 1vh;
+    }
+    .img__top{
+      left: -20vw;
+      top: -3vh;
+    }
+    
   </style>
   <style>
     .loading {
@@ -237,27 +268,26 @@
         alt=""
       />
     </article>
-    <article
-      class="scroll__section parallax__section"
-      data-section-name="parallax"
-    >
-
-      <div class="parallax__container">
-        <article class="intro container">
-          <img
-            class="title"
-            src="image/banner_title.png"
-          />
-          <figure class="banner">
-            <div class="parallax__view parallax__base"><img
-                src="image/banner_img1.png"
-                alt=""
-              /></div>
-          </figure>
-        </article>
-      </div>
-      <section class="banner__text">
+    
+      <article
+        class="scroll__section parallax__section"
+        data-section-name="parallax"
+      >
         <div class="parallax__container">
+          <article class="intro container">
+            <img
+              class="title"
+              src="image/banner_title.png"
+            />
+            <figure class="banner">
+              <div class="parallax__view parallax__base"><img
+                  src="image/banner_img1.png"
+                  alt=""
+                /></div>
+            </figure>
+          </article>
+        </div>
+        <section class="banner__text">
           <div class="banner__text__title parallax__view parallax__title">
             <h2>
               從日常<br />
@@ -267,48 +297,55 @@
             </h2>
             <div class="banner__line"></div>
           </div>
-          <div class="parallax__view parallax__base banner__text__items">
+          <div class="banner__text__items">
             <h5>攝影 造型 動態影像 設計</h5>
           </div>
-        </div>
-      </section>
-      </figure>
-      <figure class="dream">
-        <div class="dream__images">
-          <img
-            src="image/banner_img41.png"
-            alt=""
-          /> <img
-            src="image/banner_img42.png"
-            alt=""
-          />
-          <img
-            src="image/banner_img43.png"
-            alt=""
-          />
-        </div>
-        <section class="dream__text">
-          <h2 class="dream__text__title parallax__view parallax__title">
-            完成人對<br />
-            自我實現的<br />
-            一種夢想。
-          </h2>
-          <h4 class="dream__text__subtitle">
-            將素人大眾<br />
-            與高端時尚的<br />
-            界線拉近。
-          </h4>
-          <div class="dream__line"></div>
-          <p class="dream__text__description">
-            「可畏工作」從平面攝影起手，將彩妝造型，服飾設計，
-            平面設計與動態影像等美學專業領域連結、柔和並重塑，皆由顛覆傳統婚紗照以「取得邏輯」的
-            市場常態，發展成跨領域的「製成邏輯」全新創作團隊，將素人大眾與高端時尚的界線不斷拉近，
-            藉此完成人對自我展現的各種「夢想」
-          </p>
         </section>
-      </figure>
-    </article>
-
+        </figure>
+      </article>
+      <article
+        class="scroll__section parallax__section"
+        data-section-name="parallax"
+      >
+        <figure class="dream parallax__container">
+          <div class="dream__images">
+            <img
+              class="img__bottom parallax__view parallax__base"
+              src="image/banner_img41.png"
+              alt=""
+            /> <img
+              class="img__center parallax__view parallax__title"
+              src="image/banner_img42.png"
+              alt=""
+            />
+            <img
+              class="img__top parallax__view parallax__subtitle"
+              src="image/banner_img43.png"
+              alt=""
+            />
+          </div>
+          <section class="dream__text">
+            <h2 class="dream__text__title parallax__view parallax__title">
+              完成人對<br />
+              自我實現的<br />
+              一種夢想。
+            </h2>
+            <h4 class="dream__text__subtitle">
+              將素人大眾<br />
+              與高端時尚的<br />
+              界線拉近。
+            </h4>
+            <div class="dream__line"></div>
+            <p class="dream__text__description">
+              「可畏工作」從平面攝影起手，將彩妝造型，服飾設計，
+              平面設計與動態影像等美學專業領域連結、柔和並重塑，皆由顛覆傳統婚紗照以「取得邏輯」的
+              市場常態，發展成跨領域的「製成邏輯」全新創作團隊，將素人大眾與高端時尚的界線不斷拉近，
+              藉此完成人對自我展現的各種「夢想」
+            </p>
+          </section>
+        </figure>
+      </article>
+    
     <article
       class="scroll__section works"
       data-section-name="works"
@@ -406,8 +443,7 @@
         <div class="works__toTop"></div>
       </aside>
     </article>
-
-  </div>
+</div>
   <script src="./js/all.js"></script>
 
 </body>
