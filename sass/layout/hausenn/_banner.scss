@@ -16,7 +16,7 @@
 }
 
 #hausenn_banner {
-    display: flex;
+    // display: flex;
     margin-top: 205px;
 
     @media screen and (max-width: 376px) {
@@ -29,16 +29,18 @@
 
 
     &_photo {
+        // position: absolute; //////////
         max-width: 100%;
+        padding-bottom: 95px;
     }
 
     &_backgroud {
         background-color: #8a7f7c;
-        position: absolute;
-        top: 150px;
-        left: -30px;
-        width: 1023px;
-        height: 390px;
+        position: absolute;// 11111111
+        // top: 150px;
+        // left: -30px;
+        // width: 1023px;
+        // height: 390px;
         z-index: -1;
 
         @media screen and (max-width: 376px) {
@@ -47,9 +49,10 @@
     }
 
     &_text {
-        position: absolute;
-        top: 335px;
-        left: 380px;
+        position: absolute; // 2222222
+        // top: 335px;
+        // left: 380px;
+
         font-family: sans-serif;
         text-transform: uppercase;
         font-weight: bold;
@@ -64,9 +67,10 @@
 }
 
 #half_logo {
-    margin-top: 75px;
-    margin-right: 73px;
-    max-width: 27px;
+    position: absolute; ////////////////
+    // margin-top: 75px;
+    // margin-right: 73px;
+    // max-width: 27px;
 
     img {
         max-width: 100%;
@@ -79,37 +83,41 @@
     }
 }
 
-.contant {
-    max-width: 100px;
+// .contant {
+//     max-width: 100px;
 
-    img {
-        max-width: 100%;
-        filter: brightness(0%);
-        //visibility: hidden;
+//     img {
+//         max-width: 100%;
+//         filter: brightness(0%);
+//         //visibility: hidden;
 
-        @media screen and (max-width: 376px) {
-            max-width: 20px;
-        }
-    }
+//         @media screen and (max-width: 376px) {
+//             max-width: 20px;
+//         }
+//     }
 
-    @media screen and (max-width: 376px) {
-        max-width: 20px;
-    }
-}
+//     @media screen and (max-width: 376px) {
+//         max-width: 20px;
+//     }
+// }
 
 #remodel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 95px 100px 0 100px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: 95px 100px 0 100px;
 
     img {
         margin-left: 40px;
         max-width: 570px;
+        padding-bottom: 570px;
         // height: 292px;
     }
 
     &_text {
+        position: absolute; // 1111111111
+        // bottom: 0;
+        right: 0;
         letter-spacing: 3px;
     }
 
@@ -119,7 +127,8 @@
 }
 
 #interweaving {
-    margin: 135px 100px 360px 100px;
+    position: absolute; // 2222222222
+    // margin: 135px 100px 360px 100px;
     @media screen and (max-width: 376px) {
         margin: 75px 30px;
     }
@@ -147,6 +156,7 @@
     }
 
     &_subtitle {
+        position: absolute; // 11111111
         margin-left: 275px;
         display: flex;
         justify-content: space-between;
@@ -173,4 +183,172 @@
         letter-spacing: 3px;
     }
 
+}
+
+
+
+/////// 第0層
+#products {
+	img:last-child {
+		width: 587px;
+	}
+}
+.couture {
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 1050px;
+		padding-bottom: 340px;
+	}
+}
+.collections {
+	img {
+		display: block;
+		width: 800px;
+		padding-bottom: 90px;
+		padding-left: 95px;
+	}
+}
+.seasons {
+	img {
+		width: 448px;
+		padding-bottom: 350px;
+	}
+}
+
+/////// 第一層
+
+.couture{
+	&__background {
+		position: absolute; // 11111111111
+		width: 460px;
+		height: 425px;
+		right: 0;
+		background: #8a7f7c;
+	}
+	&__line {
+		position: absolute; // 不用改
+		width: 135px;
+		height: 28px;
+		background: #000;
+		left: 40px;
+		bottom: 80px;
+	}
+}
+
+.collections {
+	&__background {
+		position: absolute; // 11111111111
+		width: 489px;
+		height: 600px;
+		left: 0;
+		background: #8a7f7c;
+	}
+	&__line {
+		position: absolute; // 不用改
+		width: 135px;
+		height: 28px;
+		background: #000;
+		bottom: -14px;
+		left: 20px;
+	}
+}
+
+.seasons {
+	&__background {
+		position: absolute; // 11111111111
+		width: 180px;
+		height: 216px;
+		left: 0;
+		background: #8a7f7c;
+	}
+	&__line {
+		position: absolute; // 不用改
+		width: 135px;
+		height: 28px;
+		background: #000;
+		bottom: -14px;
+		left: 400px;
+		bottom: 20px;
+	}
+}
+
+////// 第二層
+.couture {
+	&__text {
+		position: absolute;
+	}
+	&__title {
+		font-family: Open sans;
+		font-weight: bold;
+		font-size: 66px;
+		letter-spacing: 4px;
+		color: #000;
+	}
+	&__subtitle {
+		position: absolute; // 不用改
+		width: 100px;
+		height: 137px;
+		border:1px solid black;
+		padding-top: 20px;
+		padding-left: 10px;
+
+		font-family: Noto sans;
+		font-weight: light;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: #000;
+	}
+}
+.collections {
+	&__text {
+		position: absolute;
+	}
+	&__title {
+		font-family: Open sans;
+		font-weight: bold;
+		font-size: 66px;
+		letter-spacing: 4px;
+		color: #000;
+	}
+	&__subtitle {
+		position: absolute; // 不用改
+		width: 100px;
+		height: 137px;
+		border:1px solid black;
+		padding-top: 20px;
+		padding-left: 10px;
+
+		font-family: Noto sans;
+		font-weight: light;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: #000;
+	}
+}
+.seasons {
+	&__text {
+		position: absolute;
+	}
+	&__title {
+		font-family: Open sans;
+		font-weight: bold;
+		font-size: 66px;
+		letter-spacing: 4px;
+		color: #000;
+	}
+	&__subtitle {
+		position: absolute; // 不用改
+		width: 100px;
+		height: 137px;
+		border:1px solid black;
+		padding-top: 20px;
+		padding-left: 10px;
+
+		font-family: Noto sans;
+		font-weight: light;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: #000;
+	}
 }
