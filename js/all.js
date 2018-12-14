@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 const loading = document.querySelector('.loading');
 window.addEventListener('load', function (event) {
   setInterval(() => {
     loading.className = "loading animated fadeOut";
   }, 8000);
 });
-=======
-// const loading = document.querySelector('.loading');
-// window.addEventListener('load', function (event) {
-//   setInterval(() => {
-//     loading.className += " animated fadeOut";
-//   }, 10000);
-// });
->>>>>>> scroll-top
 
 $(function () {
   $.scrollify({

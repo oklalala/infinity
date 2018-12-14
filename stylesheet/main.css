@@ -6,9 +6,9 @@
 .container {
   max-width: 1166px;
   margin: 0 auto;
+  margin: 0 auto;
 }
-
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .container {
     max-width: 345px;
   }
@@ -21,40 +21,26 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #welcome_center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #welcome_center .center_logo {
   max-width: 510px;
 }
-
 #welcome_center .center_logo img {
   width: 100%;
 }
-
 #welcome_center .center_line {
   background: white;
   width: 175px;
   height: 2px;
 }
-
 @media screen and (max-width: 376px) {
   #welcome_center .center_line {
     display: none;
@@ -66,7 +52,6 @@
   width: auto;
   text-align: center;
 }
-
 .down_arrow img {
   height: 100%;
 }
@@ -271,14 +256,8 @@
   top: 0;
   bottom: 0;
   width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
 @media screen and (max-width: 600px) {
   .contact {
     display: none;
@@ -296,26 +275,15 @@
   height: 100vh;
   width: 100%;
   outline: orange 2px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .center__line {
   background: white;
   width: 175px;
@@ -343,8 +311,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .intro {
@@ -397,7 +364,6 @@
 }
 .banner__text__title {
   position: absolute;
-  display: none;
   font-size: 44px;
   line-height: 65px;
   letter-spacing: 2px;
