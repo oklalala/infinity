@@ -1,7 +1,10 @@
 @import "base/bass";
-@import "layout/hausenn_banner";
+@import "layout/hausenn/welcome";
+@import "layout/hausenn/banner";
+
 
 
 @import "section/welcome";
 @import "section/kerwayBanner";
-@import "section/nav.scss"
+@import "section/nav";
+@import "section/kerwayWorks";

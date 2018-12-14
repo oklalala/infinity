@@ -3,6 +3,7 @@
     position: fixed;
     top: 50px;
     left: 50px;
+    z-index: 4;
     @media screen and (max-width: 600px){
       top: 35px;
       left: 20px;
@@ -16,6 +17,7 @@
 
 .contact {
   position: fixed;
+  z-index: 4;
   right: 0;
   top:0;
   bottom: 0;
@@ -24,9 +26,9 @@
   @media screen and (max-width: 600px){
     display: none;
   }
-  align-items: center;
   img {
     width: 100%;
+    margin-bottom: 378px;
   }
   
 }
