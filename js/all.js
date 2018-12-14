@@ -1,7 +1,7 @@
 const loading = document.querySelector('.loading');
 window.addEventListener('load', function (event) {
   setInterval(() => {
-    loading.className += " animated fadeOut";
+    loading.className = "loading animated fadeOut";
   }, 8000);
 });
 
