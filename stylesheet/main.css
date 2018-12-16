@@ -35,16 +35,28 @@
   bottom: 50%;
 }
 
+#welcome {
+  height: 101vh;
+  width: 101vw;
+  overflow: hidden;
+}
+
 .welcome {
   background-image: url("../image/header_photo_background.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
-  outline: orange 2px solid;
-  display: flex;
+  overflow: hidden;
+  height: 105vh;
+  width: 105vw;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.welcome__center {
+  display: flex !important;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .center {
@@ -71,10 +83,14 @@
   }
 }
 .center__arrow {
-  width: 24px;
-  height: 34px;
   position: absolute;
   bottom: 80px;
+  left: 50%;
+  cursor: pointer;
+}
+.center__arrow img {
+  width: 24px;
+  height: 34px;
 }
 
 #nav {

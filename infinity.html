@@ -23,6 +23,7 @@
   <script src="./plugins/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
   <script src="./plugins/jquery.scrollify.js"></script>
+  <script src="./plugins/parallax.min.js"></script>
   <style>
     .view {
       perspective: 1px;
@@ -132,7 +133,7 @@
 </head>
 
 <body>
-  <div class="loading">
+  <!-- <div class="loading">
     <div class="loading__view">
       <img
         src="./image/loading.png"
@@ -141,7 +142,7 @@
       <div class="loading__white">
       </div>
     </div>
-  </div>
+  </div> -->
   <nav class="menu">
     <div
       class="menu__hamburger"
@@ -208,23 +209,35 @@
   </aside>
   <div class="view">
     <article
-      class="scroll__section welcome"
+      class="scroll__section"
       data-section-name="welcome"
+      id="welcome"
     >
-      <figure class="center">
-        <div class="center__line"></div>
-        <img
-          src="image/header_photo_foreground.png"
-          alt=""
-        />
-        <div class="center__line"></div>
-      </figure>
+      <div
+        data-depth="0.1"
+        class="welcome"
+      ></div>
+      <section class="welcome__center">
+        <figure class="center">
+          <div class="center__line"></div>
+          <img
+            src="image/header_photo_foreground.png"
+            alt=""
+          />
+          <div class="center__line"></div>
+        </figure>
+      </section>
+    </article>
+    <a
+      href="#parallax"
+      class="center__arrow"
+    >
       <img
-        class="center__arrow animated infinite bounce"
+        class="animated infinite bounce"
         src="image/arrow.png"
         alt=""
       />
-    </article>
+    </a>
 
     <article
       class="scroll__section parallax__section"

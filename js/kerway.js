@@ -10,7 +10,7 @@ $(function () {
     section: ".scroll__section",
     sectionName: "section-name",
     scrollSpeed: 1100,
-    overflowScroll: false,
+    overflowScroll: true,
     target: '.view',
     setHeights: false
   });
@@ -28,3 +28,5 @@ $('.waterfall').masonry({
 function hamburgerToggle(x) {
   x.classList.toggle("change");
 }
+var scene = document.getElementById('welcome');
+var parallaxInstance = new Parallax(scene);
