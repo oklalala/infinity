@@ -681,7 +681,7 @@
 }
 
 #hausenn_welcome {
-  background-image: url("/image/header_photo_background.jpg");
+  background-image: url("../image/header_photo_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -694,7 +694,7 @@
 
 #welcome_center {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 #welcome_center .center_logo {
   max-width: 510px;
@@ -723,7 +723,7 @@
 }
 
 .banner_hausenn_logo {
-  margin-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 @media screen and (max-width: 376px) {

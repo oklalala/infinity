@@ -1,5 +1,5 @@
 #hausenn_welcome {
-    background-image: url("/image/header_photo_background.jpg");
+    background-image: url("../image/header_photo_background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@
 
 #welcome_center {
     display: flex;
-    align-items: center;
+    justify-content: center;
 
     .center_logo {
         max-width: 510px;
@@ -37,6 +37,7 @@
     height: 34px;
     width: auto;
     text-align: center;
+
     img {
         height: 100%;
     }

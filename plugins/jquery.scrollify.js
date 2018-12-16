@@ -81,7 +81,7 @@ if touchScroll is false - update index
       scrollSpeed: 1100,
       offset: 0,
       scrollbars: true,
-      target: ".view",
+      target: "html,body",
       standardScrollElements: false,
       setHeights: true,
       overflowScroll: true,

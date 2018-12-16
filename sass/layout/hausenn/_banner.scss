@@ -1,86 +1,86 @@
 .banner_hausenn_logo {
-    margin-top: 50px;
-    text-align: center;
+	padding-top: 50px;
+	text-align: center;
 
-    @media screen and (max-width: 376px) {
-        margin-top: 20px;
-    }
+	@media screen and (max-width: 376px) {
+		margin-top: 20px;
+	}
 
-    img {
-        max-width: 200px;
+	img {
+		max-width: 200px;
 
-        @media screen and (max-width: 376px) {
-            max-width: 125px;
-        }
-    }
+		@media screen and (max-width: 376px) {
+			max-width: 125px;
+		}
+	}
 }
 
 #hausenn_banner {
-    // display: flex;
-    margin-top: 205px;
+	// display: flex;
+	margin-top: 205px;
 
-    @media screen and (max-width: 376px) {
-        margin-top: 20px;
-    }
+	@media screen and (max-width: 376px) {
+		margin-top: 20px;
+	}
 }
 
 #deconstruct {
-    position: relative;
+	position: relative;
 
 
-    &_photo {
-        // position: absolute; //////////
-        max-width: 100%;
-        padding-bottom: 95px;
-    }
+	&_photo {
+		// position: absolute; //////////
+		max-width: 100%;
+		padding-bottom: 95px;
+	}
 
-    &_backgroud {
-        background-color: #8a7f7c;
-        position: absolute;// 11111111
-        // top: 150px;
-        // left: -30px;
-        // width: 1023px;
-        // height: 390px;
-        z-index: -1;
+	&_backgroud {
+		background-color: #8a7f7c;
+		position: absolute; // 11111111
+		// top: 150px;
+		// left: -30px;
+		// width: 1023px;
+		// height: 390px;
+		z-index: -1;
 
-        @media screen and (max-width: 376px) {
-            display: none;
-        }
-    }
+		@media screen and (max-width: 376px) {
+			display: none;
+		}
+	}
 
-    &_text {
-        position: absolute; // 2222222
-        // top: 335px;
-        // left: 380px;
+	&_text {
+		position: absolute; // 2222222
+		// top: 335px;
+		// left: 380px;
 
-        font-family: sans-serif;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 34px;
-        letter-spacing: 4px;
-        line-height: 40px;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 34px;
+		letter-spacing: 4px;
+		line-height: 40px;
 
-        @media screen and (max-width: 376px) {
-            display: none;
-        }
-    }
+		@media screen and (max-width: 376px) {
+			display: none;
+		}
+	}
 }
 
 #half_logo {
-    position: absolute; ////////////////
-    // margin-top: 75px;
-    // margin-right: 73px;
-    // max-width: 27px;
+	position: absolute; ////////////////
+	// margin-top: 75px;
+	// margin-right: 73px;
+	// max-width: 27px;
 
-    img {
-        max-width: 100%;
-    }
+	img {
+		max-width: 100%;
+	}
 
-    @media screen and (max-width: 376px) {
-        margin-top: 15px;
-        margin-right: 10px;
-        max-width: 10px;
-    }
+	@media screen and (max-width: 376px) {
+		margin-top: 15px;
+		margin-right: 10px;
+		max-width: 10px;
+	}
 }
 
 // .contant {
@@ -102,86 +102,90 @@
 // }
 
 #remodel {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // margin: 95px 100px 0 100px;
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	// margin: 95px 100px 0 100px;
 
-    img {
-        margin-left: 40px;
-        max-width: 570px;
-        padding-bottom: 570px;
-        // height: 292px;
-    }
+	img {
+		margin-left: 40px;
+		max-width: 570px;
+		padding-bottom: 570px;
+		// height: 292px;
+	}
 
-    &_text {
-        position: absolute; // 1111111111
-        // bottom: 0;
-        right: 0;
-        letter-spacing: 3px;
-    }
+	&_text {
+		position: absolute; // 1111111111
+		// bottom: 0;
+		right: 0;
+		letter-spacing: 3px;
+	}
 
-    @media screen and (max-width: 376px) {
-        display: none;
-    }
+	@media screen and (max-width: 376px) {
+		display: none;
+	}
 }
 
 #interweaving {
-    position: absolute; // 2222222222
-    // margin: 135px 100px 360px 100px;
-    @media screen and (max-width: 376px) {
-        margin: 75px 30px;
-    }
-    &_title {
-        margin-left: 275px;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 2rem;
-        letter-spacing: 4px;
-        font-weight: bold;
-        margin-bottom: 20px;
+	position: absolute; // 2222222222
 
-        @media screen and (max-width: 376px) {
-            margin:0;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            font-size: 1rem;
-            letter-spacing: 3px;
-            font-weight: bold;
+	// margin: 135px 100px 360px 100px;
+	@media screen and (max-width: 376px) {
+		margin: 75px 30px;
+	}
 
-            span {
-                display: block;
-            }
-        }
-    }
+	&_title {
+		margin-left: 275px;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		font-size: 2rem;
+		letter-spacing: 4px;
+		font-weight: bold;
+		margin-bottom: 20px;
 
-    &_subtitle {
-        position: absolute; // 11111111
-        margin-left: 275px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media screen and (max-width: 376px) {
-            display: block;
-            margin: 0;
-        }
-    }
+		@media screen and (max-width: 376px) {
+			margin: 0;
+			text-transform: uppercase;
+			font-family: sans-serif;
+			font-size: 1rem;
+			letter-spacing: 3px;
+			font-weight: bold;
 
-    &_line {
-        background-color: black;
-        width: 55px;
-        height: 7px;
-        @media screen and (max-width: 376px) {
-            margin: 20px 0;
-            width: 35px;
-            height: 4px;
-        }
-    }
+			span {
+				display: block;
+			}
+		}
+	}
 
-    &_text {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-    }
+	&_subtitle {
+		position: absolute; // 11111111
+		margin-left: 275px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: 376px) {
+			display: block;
+			margin: 0;
+		}
+	}
+
+	&_line {
+		background-color: black;
+		width: 55px;
+		height: 7px;
+
+		@media screen and (max-width: 376px) {
+			margin: 20px 0;
+			width: 35px;
+			height: 4px;
+		}
+	}
+
+	&_text {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
 
 }
 
@@ -193,6 +197,7 @@
 		width: 587px;
 	}
 }
+
 .couture {
 	img {
 		display: block;
@@ -201,6 +206,7 @@
 		padding-bottom: 340px;
 	}
 }
+
 .collections {
 	img {
 		display: block;
@@ -209,6 +215,7 @@
 		padding-left: 95px;
 	}
 }
+
 .seasons {
 	img {
 		width: 448px;
@@ -218,7 +225,7 @@
 
 /////// 第一層
 
-.couture{
+.couture {
 	&__background {
 		position: absolute; // 11111111111
 		width: 460px;
@@ -226,6 +233,7 @@
 		right: 0;
 		background: #8a7f7c;
 	}
+
 	&__line {
 		position: absolute; // 不用改
 		width: 135px;
@@ -244,6 +252,7 @@
 		left: 0;
 		background: #8a7f7c;
 	}
+
 	&__line {
 		position: absolute; // 不用改
 		width: 135px;
@@ -262,6 +271,7 @@
 		left: 0;
 		background: #8a7f7c;
 	}
+
 	&__line {
 		position: absolute; // 不用改
 		width: 135px;
@@ -278,6 +288,7 @@
 	&__text {
 		position: absolute;
 	}
+
 	&__title {
 		font-family: Open sans;
 		font-weight: bold;
@@ -285,11 +296,12 @@
 		letter-spacing: 4px;
 		color: #000;
 	}
+
 	&__subtitle {
 		position: absolute; // 不用改
 		width: 100px;
 		height: 137px;
-		border:1px solid black;
+		border: 1px solid black;
 		padding-top: 20px;
 		padding-left: 10px;
 
@@ -300,10 +312,12 @@
 		color: #000;
 	}
 }
+
 .collections {
 	&__text {
 		position: absolute;
 	}
+
 	&__title {
 		font-family: Open sans;
 		font-weight: bold;
@@ -311,11 +325,12 @@
 		letter-spacing: 4px;
 		color: #000;
 	}
+
 	&__subtitle {
 		position: absolute; // 不用改
 		width: 100px;
 		height: 137px;
-		border:1px solid black;
+		border: 1px solid black;
 		padding-top: 20px;
 		padding-left: 10px;
 
@@ -326,10 +341,12 @@
 		color: #000;
 	}
 }
+
 .seasons {
 	&__text {
 		position: absolute;
 	}
+
 	&__title {
 		font-family: Open sans;
 		font-weight: bold;
@@ -337,11 +354,12 @@
 		letter-spacing: 4px;
 		color: #000;
 	}
+
 	&__subtitle {
 		position: absolute; // 不用改
 		width: 100px;
 		height: 137px;
-		border:1px solid black;
+		border: 1px solid black;
 		padding-top: 20px;
 		padding-left: 10px;
 
