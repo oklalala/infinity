@@ -18,3 +18,7 @@ $(function () {
     $.scrollify.move("#parallax");
   })
 });
+
+function hamburgerToggle(x) {
+  x.classList.toggle("change");
+}

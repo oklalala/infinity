@@ -14,22 +14,6 @@
   }
 }
 
-.menu__hamburger {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  z-index: 4;
-  width: 39px;
-  height: 19px;
-  background: red;
-}
-@media screen and (max-width: 600px) {
-  .menu__hamburger {
-    top: 35px;
-    left: 20px;
-  }
-}
-
 .contact {
   position: fixed;
   z-index: 4;
@@ -45,8 +29,10 @@
   }
 }
 .contact img {
-  width: 100%;
-  margin-bottom: 378px;
+  position: fixed;
+  width: 100px;
+  height: 164px;
+  bottom: 50%;
 }
 
 .welcome {
@@ -123,6 +109,67 @@
   font-size: 30px;
   color: white;
   margin-top: 150px;
+}
+
+.menu__hamburger {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+}
+@media screen and (max-width: 600px) {
+  .menu__hamburger {
+    top: 35px;
+    left: 20px;
+  }
+}
+
+.menu__hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar11, .bar12, .bar21, .bar22, .bar31, .bar32 {
+  display: inline-block;
+  width: 17px;
+  height: 3px;
+  background: black;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.bar1, .bar2, .bar3 {
+  height: 8px;
+}
+
+.bar11, .bar21, .bar31 {
+  margin-right: 5px;
+}
+
+.change .bar11, .change .bar12, .change .bar31, .change .bar32 {
+  width: 20px;
+  background: white;
+}
+
+.change .bar11 {
+  /*   -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+  transform: rotate(45deg);
+}
+
+.change .bar12 {
+  transform: translate(-17px, 0px) rotate(-45deg);
+}
+
+.change .bar31 {
+  transform: rotate(-45deg) translate(0px, -2px);
+}
+
+.change .bar32 {
+  transform: translate(-17px, -2px) rotate(45deg);
+}
+
+.change .bar21, .change .bar22 {
+  opacity: 0;
 }
 
 @keyframes white {
@@ -460,6 +507,41 @@
 .grid__item img {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.kerway__footer {
+  padding: 75px 0 65px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.kerway__footer figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.kerway__footer .address {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: black;
+}
+.kerway__footer img {
+  width: 318px;
+  height: 50px;
+}
+.kerway__footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.kerway__footer section p {
+  font-family: Noto sans;
+  font-weight: light;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  color: black;
 }
 
 #hausenn_welcome {

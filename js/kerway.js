@@ -24,3 +24,7 @@ $('.waterfall').masonry({
   itemSelector: '.waterfall__item',
   gutter: 50
 });
+
+function hamburgerToggle(x) {
+  x.classList.toggle("change");
+}
