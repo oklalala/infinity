@@ -22,3 +22,5 @@ $(function () {
 function hamburgerToggle(x) {
   x.classList.toggle("change");
 }
+var scene = document.getElementById('welcome');
+var parallaxInstance = new Parallax(scene);

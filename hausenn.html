@@ -218,7 +218,7 @@
 </head>
 
 <body>
-    <div class="loading">
+    <!-- <div class="loading">
         <div class="loading__view">
             <img
                 src="./image/loading.png"
@@ -227,14 +227,18 @@
             <div class="loading__white">
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="view">
         <article
-            id="hausenn_welcome"
+            id="welcome"
             class="scroll__section"
             data-section-name="welcome"
         >
-            <section class="container">
+            <div
+                class="hausenn_welcome"
+                data-depth="0.1"
+            ></div>
+            <section id="hausenn_welcome">
                 <figure id="welcome_center">
                     <div class="center_line"></div>
                     <div class="center_logo">
@@ -246,20 +250,20 @@
                     </div>
                     <div class="center_line"></div>
                 </figure>
-                <div class="down_arrow">
-                    <a
-                        href="#parallax"
-                        class="gotobanner"
-                    >
-                        <img
-                            class="animated infinite bounce"
-                            src="image/arrow.png"
-                            alt=""
-                        >
-                    </a>
-                </div>
             </section>
         </article>
+        <div class="down_arrow">
+            <a
+                href="#parallax"
+                class="gotobanner"
+            >
+                <img
+                    class="animated infinite bounce"
+                    src="image/arrow.png"
+                    alt=""
+                >
+            </a>
+        </div>
         <article
             class="scroll__section parallax__section"
             data-section-name="parallax"
@@ -449,7 +453,8 @@
 
     <script src="./plugins/jquery-3.3.1.min.js"></script>
     <script src="./plugins/jquery.scrollify.js"></script>
-    <!-- <script src="./js/hausenn.js"></script> -->
+    <script src="./plugins/parallax.min.js"></script>
+    <script src="./js/hausenn.js"></script>
 </body>
 
 </html>
