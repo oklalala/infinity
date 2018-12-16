@@ -39,7 +39,34 @@ $(function () {
 
   });
 });
+$(".works__home").click(function () {
+  document.querySelector(".works__text__title").innerHTML = "WORKS";
+  document.querySelector(".works__text__subtitle").innerHTML = "作品";
+})
+
+$(".works__check__text").click(function () {
+  document.querySelector(".works__text__subtitle").innerHTML = "";
+  let works__text__title = document.querySelector(".works__text__title");
+  let data_rel = $(this).attr('data-rel');
+  switch (data_rel) {
+    case "worklist":
+      works__text__title.innerHTML = "工作項目";
+      break;
+    case "photographer":
+      works__text__title.innerHTML = "攝影師";
+      break;
+    case "stylist":
+      works__text__title.innerHTML = "造型師";
+      break;
+    case "director":
+      works__text__title.innerHTML = "導演";
+      break;
+    default:
+      works__text__title.innerHTML = "";
+  }
+})
 
 function hamburgerToggle(x) {
   x.classList.toggle("change");
 }
+

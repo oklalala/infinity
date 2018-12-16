@@ -37,6 +37,8 @@
   &__home {
     width: 48px;
     padding: 12px 0;
+    background: transparent;
+    border:transparent;
     &__icon {
       width: 10px;
       height: 10px;
@@ -60,9 +62,13 @@
     width: 840px;
     text-align: right;
     &__text {
-      text-align: left;
       display: inline-block;
+      border-top:transparent;
+      border-left:transparent;
+      border-right:transparent;
       border-bottom: 12px solid white;
+      background: transparent;
+      color: white;
       width: 170px;
       margin-right: 45px;
       font-size: 16px;
@@ -83,14 +89,14 @@
   }
 }
 
-.grid {
-    height: 1200px;
-    background:linear-gradient(red,blue);
+.waterfall {
+    
+    background: transparent;
     margin: -100px auto 0;
     &__item {
       width: 350px;
       img {
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 50px;
       }
     }
