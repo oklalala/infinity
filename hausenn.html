@@ -15,8 +15,11 @@
         rel="stylesheet"
         href="stylesheet/main.css"
     >
-    <link rel="stylesheet" href="./plugins/animate.min.css"/>
-    
+    <link
+        rel="stylesheet"
+        href="./plugins/animate.min.css"
+    />
+
     <title>hausenn</title>
     <style>
         .view {
@@ -24,10 +27,197 @@
             height: 100vh;
             overflow-x: hidden;
         }
+
+        .parallax__container {
+            position: relative;
+            height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .parallax__view {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__base {
+            transform: translateZ(0px);
+        }
+
+        .parallax__title {
+            transform: translateZ(0.1px) scale(0.9);
+            z-index: 9;
+        }
+
+        .parallax__subtitle {
+            transform: translateZ(0.2px) scale(0.7);
+            z-index: 10;
+        }
+
+        .parallax__toptitle {
+            transform: translateZ(0.4px) scale(0.7);
+            z-index: 11;
+        }
+
+        #hausenn_banner {
+            margin-top: 100px;
+        }
+
+        #deconstruct_text {
+            right: -160vw;
+            top: 32vh;
+        }
+
+        #remodel {
+            top: 77vh;
+        }
+
+        #remodel img {
+            margin-left: 0px;
+            max-width: 580px;
+            padding-bottom: 0px;
+            position: absolute;
+            top: -26vh;
+            right: 38vw;
+        }
+
+        #remodel_text {
+            width: 300px;
+            height: 200px;
+            top: 72vh;
+            position: absolute;
+            left: 71vw;
+        }
+
+        #deconstruct_backgroud {
+            width: 1000px;
+            height: 390px;
+            left: -3vw;
+            top: 14vh;
+        }
+
+        #interweaving_title {
+            left: 5vw;
+            top: -1vh;
+        }
+
+        #interweaving_text {
+            top: 47vh;
+            left: 50vw;
+            width: 300px;
+        }
+
+        #interweaving_line {
+            top: 48vh;
+            left: 2vw;
+        }
+
+        #products {
+            top: 100vh;
+        }
+
+        .couture img {
+            top: 20vh
+        }
+
+        .couture__title {
+            eft: 54vw;
+            top: 37vh;
+        }
+
+        .couture__background {
+            z-index: -1;
+            left: 56vw;
+            top: 24vh;
+        }
+
+        .couture__subtitle {
+            left: 70vw;
+            top: 45vh;
+        }
+
+        .couture__line {
+            left: 62vw;
+            top: 62vh;
+        }
+
+        .collections {
+            top: 120vh;
+        }
+
+        .collections img {
+            width: 700px;
+            top: -3vh;
+            left: 16vw;
+        }
+
+        .collections__background {
+            z-index: -1;
+            top: -20vh;
+            left: 10vw;
+        }
+
+        .collections__title {
+            top: 10vh;
+            left: 28vw;
+        }
+
+        .collections__line {
+            left: 30vw;
+            top: 41vh;
+        }
+
+        .seasons {
+            top: 100vh;
+        }
+
+        .seasons img {
+            left: 60vw;
+        }
+
+        .seasons__background {
+            left: 55vw;
+            top: 43vh;
+        }
+
+        .seasons__title {
+            top: 55vh;
+            left: 42vw;
+        }
+
+        .seasons__subtitle {
+            left: 53vw;
+            top: 35vh;
+            z-index: 15;
+        }
+
+        .seasons__line {
+            top: 10vh;
+            left: 28vw;
+        }
+
+        #products img:last-child {
+            left: 40vw;
+            position: absolute;
+            z-index: -1;
+            bottom: -49vh;
+        }
     </style>
 </head>
 
 <body>
+    <!-- <div class="loading">
+        <div class="loading__view">
+            <img
+                src="./image/loading.png"
+                alt=""
+            >
+            <div class="loading__white">
+            </div>
+        </div>
+    </div> -->
     <div class="view">
         <article
             id="hausenn_welcome"
@@ -51,7 +241,8 @@
                         href="#parallax"
                         class="gotobanner"
                     >
-                        <img class="animated infinite bounce"
+                        <img
+                            class="animated infinite bounce"
                             src="image/arrow.png"
                             alt=""
                         >
@@ -63,7 +254,7 @@
             class="scroll__section"
             data-section-name="parallax"
         >
-            <article class="hausenn__intro">
+            <article class="hausenn__intro parallax__container">
                 <div class="banner_hausenn_logo container">
                     <img
                         src="image/banner_title 2.png"
@@ -79,51 +270,80 @@
                     </div>
                     <section
                         id="deconstruct"
-                        class="container"
+                        class="container parallax__container"
                     >
                         <img
                             id="deconstruct_photo"
                             src="image/banner_img1 2.png"
+                            class="parallax__view parallax__title"
                             alt="#"
                         >
-                        <div id="deconstruct_backgroud">
+                        <div
+                            id="deconstruct_backgroud"
+                            class="
+                            parallax__view
+                            parallax__base"
+                        >
                         </div>
-                        <div id="deconstruct_text">
+                        <div
+                            id="deconstruct_text"
+                            class="
+                            parallax__view
+                            parallax__subtitle"
+                        >
                             deconstruct<br />
                             versus&nbsp;reconstruct<br />
                             surmount&nbsp;and<br />
                             remodel
                         </div>
+                        <div
+                            id="remodel"
+                            class="parallax__view parallax__title"
+                        >
+                            <img
+                                src="image/banner_img2.png"
+                                alt="#"
+                            >
+                        </div>
+                        <div
+                            id="remodel_text"
+                            class="parallax__view parallax__base"
+                        >
+                            結構與解構<br />
+                            打破與重塑<br />
+                            顛覆服飾的<br />
+                            種種邏輯
+                        </div>
                     </section>
                 </figure>
                 <section
-                    id="remodel"
-                    class="container"
-                >
-                    <img
-                        src="image/banner_img2.png"
-                        alt="#"
-                    >
-                    <div id="remodel_text">
-                        結構與解構<br />
-                        打破與重塑<br />
-                        顛覆服飾的<br />
-                        種種邏輯
-                    </div>
-                </section>
-                <section
                     id="interweaving"
-                    class="container"
+                    class="container parallax__container"
                 >
-                    <div id="interweaving_title">
+                    <div
+                        id="interweaving_title"
+                        class="
+                        parallax__view
+                        parallax__subtitle"
+                    >
                         interweavingbetween&nbsp;
                         fabric&nbsp;
                         and&nbsp;
                         material
                     </div>
                     <div id="interweaving_subtitle">
-                        <div id="interweaving_line"></div>
-                        <div id="interweaving_text">
+                        <div
+                            id="interweaving_line"
+                            class="
+                            parallax__view
+                            parallax__base"
+                        ></div>
+                        <div
+                            id="interweaving_text"
+                            class="
+                            parallax__view
+                            parallax__base"
+                        >
                             遊走針與線布料與媒材交織，<br />
                             而成hausenn<br />
                             這個獨一無二的新代名詞。
@@ -132,58 +352,89 @@
                 </section>
             </article>
 
-            <article id="products">
-                <fugure class="couture">
+            <article
+                id="products"
+                class="parallax__container"
+            >
+                <figure class="couture">
                     <header class="couture__text">
-                        <h1 class="couture__title">COUTURE</h1>
-                        <div class="couture__subtitle">訂製服</div>
+                        <h1 class="couture__title parallax__view parallax__toptitle">COUTURE</h1>
+                        <div class="couture__subtitle parallax__view parallax__subtitle">訂製服</div>
                     </header>
                     <img
                         src="image/banner_img3.png"
                         alt=""
+                        class="parallax__view parallax__title"
                     >
-                    <div class="couture__background">
-                        <div class="couture__line"></div>
+                    <div class="couture__background 
+                            parallax__view
+                            parallax__base">
                     </div>
-                </fugure>
-
-                <fugure class="collections">
+                    <div class="couture__line parallax__view
+                            parallax__toptitle"></div>
+                </figure>
+                <figure class="collections parallax__container">
                     <header class="collections__text">
-                        <h1 class="collections__title">COLLECTIONS</h1>
-                        <div class="collections__subtitle">女裝</div>
+                        <h1 class="collections__title parallax__view parallax__toptitle">COLLECTIONS</h1>
+                        <div class="collections__subtitle parallax__view parallax__subtitle">女裝</div>
                     </header>
                     <img
                         src="image/banner_img4.png"
                         alt=""
+                        class="parallax__view parallax__title"
                     >
-                    <div class="collections__background">
-                        <div class="collections__line"></div>
+                    <div class="collections__background parallax__view
+                            parallax__base">
                     </div>
-                </fugure>
+                    <div class="collections__line parallax__view
+                                parallax__toptitle"></div>
+                </figure>
 
-                <fugure class="seasons">
+                <figure class="seasons parallax__container">
                     <header class="collections__text">
-                        <h1 class="seasons__title">SEASONS</h1>
-                        <div class="seasons__subtitle">男裝</div>
+                        <h1 class="seasons__title parallax__view parallax__toptitle">SEASONS</h1>
+                        <div class="seasons__subtitle parallax__view parallax__title">男裝</div>
                     </header>
                     <img
                         src="image/banner_img5.png"
+                        class="parallax__view parallax__base"
                         alt=""
                     >
-                    <div class="seasons__background">
-                        <div class="seasons__line"></div>
+                    <div class="seasons__background parallax__view
+                            parallax__title">
                     </div>
-                </fugure>
-                <img
-                    src="image/banner_img6.png"
-                    alt=""
-                >
+                    <div class="seasons__line parallax__view
+                                parallax__toptitle"></div>
+                    <img
+                        src="image/banner_img6.png"
+                        alt=""
+                    >
+                </figure>
+
+                <footer class="hausenn__footer">
+                    <figure>
+                        <h5 class="address">台南市中西區樹林街貳段貳伍貳號壹樓</h5>
+                        <img
+                            src="image/banner_title 2.png"
+                            alt=""
+                        >
+                    </figure>
+                    <section>
+                        <p class="companyInfo">
+                            HAUSENNCAMP.FASHION@GMAIL.COM
+                            <br> +886 8 214 7968
+                        </p>
+                        <p class="copyright">
+                            COPYRIGHT &copy; 2017 HAUSENNCAMP
+                        </p>
+                    </section>
+                </footer>
             </article>
         </article>
     </div>
     <script src="./plugins/jquery-3.3.1.min.js"></script>
     <script src="./plugins/jquery.scrollify.js"></script>
-    <script src="./js/all.js"></script>
+    <!-- <script src="./js/hausenn.js"></script> -->
 </body>
 
 </html>
