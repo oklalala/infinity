@@ -1,9 +1,9 @@
-const loading = document.querySelector('.loading');
-window.addEventListener('load', function (event) {
-  setInterval(() => {
-    loading.className = "loading animated fadeOut";
-  }, 8000);
-});
+// const loading = document.querySelector('.loading');
+// window.addEventListener('load', function (event) {
+//   setInterval(() => {
+//     loading.className = "loading animated fadeOut";
+//   }, 8000);
+// });
 
 $(function () {
   $.scrollify({
@@ -11,8 +11,12 @@ $(function () {
     sectionName: "section-name",
     scrollSpeed: 1100,
     overflowScroll: true,
+    target: '.view',
     setHeights: false
   });
+  $('.gotobanner').on('click', function () {
+    $.scrollify.move("#parallax");
+  })
 });
 
 $('.grid').masonry({
