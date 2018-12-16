@@ -819,3 +819,39 @@
   letter-spacing: 2px;
   color: #000;
 }
+
+.hausenn__footer {
+  padding: 75px 100px 65px;
+  height: 245px;
+  background: #d7c5ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hausenn__footer figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.hausenn__footer .address {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: black;
+}
+.hausenn__footer img {
+  width: 318px;
+  height: 50px;
+}
+.hausenn__footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.hausenn__footer section p {
+  font-family: Noto sans;
+  font-weight: light;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  color: black;
+}
