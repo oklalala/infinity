@@ -1,59 +1,82 @@
-
 .contact {
   position: fixed;
   z-index: 4;
   right: 0;
-  top:0;
+  top: 0;
   bottom: 0;
   width: 100px;
   display: flex;
-  @media screen and (max-width: 600px){
+
+  @media screen and (max-width: 600px) {
     display: none;
   }
+
   img {
     position: fixed;
     width: 100px;
     height: 164px;
     bottom: 50%;
   }
-  
+
+}
+
+#welcome {
+  height: 101vh;
+  width: 101vw;
+  overflow: hidden;
 }
 
 .welcome {
   background-image: url("../image/header_photo_background.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
-  outline: orange 2px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  height: 105vh;
+  width: 105vw;
+  margin-left: -20px;
+  margin-top: -20px;
+
+  &__center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
-.center{
+.center {
   display: flex;
   align-items: center;
+
   &__line {
-    background:white;
+    background: white;
     width: 175px;
     height: 2px;
     display: inline-block;
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
       display: none;
     }
   }
-  
+
   img {
     width: 510px;
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
       width: 335px;
     }
   }
+
   &__arrow {
-    width: 24px;
-    height: 34px;
     position: absolute;
     bottom: 80px;
+    left: 50%;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+      height: 34px;
+    }
   }
 }

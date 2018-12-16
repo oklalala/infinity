@@ -40,22 +40,28 @@
   bottom: 50%;
 }
 
+#welcome {
+  height: 101vh;
+  width: 101vw;
+  overflow: hidden;
+}
+
 .welcome {
   background-image: url("../image/header_photo_background.png");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  height: 105vh;
+  width: 105vw;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.welcome__center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  outline: orange 2px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .center {
@@ -91,10 +97,14 @@
 }
 
 .center__arrow {
-  width: 24px;
-  height: 34px;
   position: absolute;
   bottom: 80px;
+  left: 50%;
+  cursor: pointer;
+}
+.center__arrow img {
+  width: 24px;
+  height: 34px;
 }
 
 #nav {
@@ -201,6 +211,65 @@
 
 .change .bar21, .change .bar22 {
   opacity: 0;
+}
+
+@keyframes white {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.loading {
+  background-color: #000;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100%;
+}
+.loading img {
+  width: 10%;
+  position: absolute;
+  opacity: 0.2;
+  animation-name: loading;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+}
+.loading__view {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading__white {
+  width: 145px;
+  height: 128px;
+  background-color: rgba(255, 255, 255, 0.37);
+  position: absolute;
+  opacity: 0;
+  animation-name: white;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 * {
@@ -604,31 +673,32 @@
   color: black;
 }
 
-#hausenn_welcome {
+.hausenn_welcome {
   background-image: url("../image/header_photo_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 105vh;
+  width: 105vw;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+#hausenn_welcome {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 #welcome_center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #welcome_center .center_logo {
@@ -655,6 +725,9 @@
   height: 34px;
   width: auto;
   text-align: center;
+  bottom: 5vh;
+  position: absolute;
+  left: 50%;
 }
 
 .down_arrow img {
