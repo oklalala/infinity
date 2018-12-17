@@ -1,0 +1,277 @@
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.parallax__layer--back1 {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--back2 {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+}
+
+.parallax__layer--back3 {
+  -webkit-transform: translateZ(-3px) scale(4);
+          transform: translateZ(-3px) scale(4);
+}
+
+.parallax__layer--back4 {
+  -webkit-transform: translateZ(-4px) scale(5);
+          transform: translateZ(-4px) scale(5);
+}
+
+.parallax__layer--back5 {
+  -webkit-transform: translateZ(-5px) scale(6);
+          transform: translateZ(-5px) scale(6);
+}
+
+.parallax__layer--back6 {
+  -webkit-transform: translateZ(-6px) scale(7);
+          transform: translateZ(-6px) scale(7);
+}
+
+.parallax__layer--back7 {
+  -webkit-transform: translateZ(-7px) scale(8);
+          transform: translateZ(-7px) scale(8);
+}
+
+.parallax__layer--back8 {
+  -webkit-transform: translateZ(-8px) scale(9);
+          transform: translateZ(-8px) scale(9);
+}
+
+.parallax__layer--back9 {
+  -webkit-transform: translateZ(-9px) scale(10);
+          transform: translateZ(-9px) scale(10);
+}
+
+.parallax__layer--back10 {
+  -webkit-transform: translateZ(-10px) scale(11);
+          transform: translateZ(-10px) scale(11);
+}
+
+.parallax__layer--back11 {
+  -webkit-transform: translateZ(-11px) scale(12);
+          transform: translateZ(-11px) scale(12);
+}
+
+.parallax__layer--back12 {
+  -webkit-transform: translateZ(-12px) scale(13);
+          transform: translateZ(-12px) scale(13);
+}
+
+.parallax__layer--back13 {
+  -webkit-transform: translateZ(-13px) scale(14);
+          transform: translateZ(-13px) scale(14);
+}
+
+.parallax__layer--back14 {
+  -webkit-transform: translateZ(-14px) scale(15);
+          transform: translateZ(-14px) scale(15);
+}
+
+.parallax__layer--back15 {
+  -webkit-transform: translateZ(-15px) scale(16);
+          transform: translateZ(-15px) scale(16);
+}
+
+.parallax__layer--back16 {
+  -webkit-transform: translateZ(-16px) scale(17);
+          transform: translateZ(-16px) scale(17);
+}
+
+.parallax__layer--back17 {
+  -webkit-transform: translateZ(-17px) scale(18);
+          transform: translateZ(-17px) scale(18);
+}
+
+.parallax__layer--back18 {
+  -webkit-transform: translateZ(-18px) scale(19);
+          transform: translateZ(-18px) scale(19);
+}
+
+.parallax__layer--back19 {
+  -webkit-transform: translateZ(-19px) scale(20);
+          transform: translateZ(-19px) scale(20);
+}
+
+.parallax__layer--back20 {
+  -webkit-transform: translateZ(-20px) scale(21);
+          transform: translateZ(-20px) scale(21);
+}
+
+.parallax__layer--back21 {
+  -webkit-transform: translateZ(-21px) scale(22);
+          transform: translateZ(-21px) scale(22);
+}
+
+.parallax__layer--back22 {
+  -webkit-transform: translateZ(-22px) scale(23);
+          transform: translateZ(-22px) scale(23);
+}
+
+.parallax__layer--back23 {
+  -webkit-transform: translateZ(-23px) scale(24);
+          transform: translateZ(-23px) scale(24);
+}
+
+.parallax__layer--back24 {
+  -webkit-transform: translateZ(-24px) scale(25);
+          transform: translateZ(-24px) scale(25);
+}
+
+.parallax__layer--back25 {
+  -webkit-transform: translateZ(-25px) scale(26);
+          transform: translateZ(-25px) scale(26);
+}
+
+.parallax__layer--back26 {
+  -webkit-transform: translateZ(-26px) scale(27);
+          transform: translateZ(-26px) scale(27);
+}
+
+.parallax__layer--back27 {
+  -webkit-transform: translateZ(-27px) scale(28);
+          transform: translateZ(-27px) scale(28);
+}
+
+.parallax__layer--back28 {
+  -webkit-transform: translateZ(-28px) scale(29);
+          transform: translateZ(-28px) scale(29);
+}
+
+.parallax__layer--back29 {
+  -webkit-transform: translateZ(-29px) scale(30);
+          transform: translateZ(-29px) scale(30);
+}
+
+.parallax__layer--back30 {
+  -webkit-transform: translateZ(-30px) scale(31);
+          transform: translateZ(-30px) scale(31);
+}
+
+.parallax__layer--back31 {
+  -webkit-transform: translateZ(-31px) scale(32);
+          transform: translateZ(-31px) scale(32);
+}
+
+.parallax__layer--back32 {
+  -webkit-transform: translateZ(-32px) scale(33);
+          transform: translateZ(-32px) scale(33);
+}
+
+.parallax__layer--back33 {
+  -webkit-transform: translateZ(-33px) scale(34);
+          transform: translateZ(-33px) scale(34);
+}
+
+.parallax__layer--back34 {
+  -webkit-transform: translateZ(-34px) scale(35);
+          transform: translateZ(-34px) scale(35);
+}
+
+.parallax__layer--back35 {
+  -webkit-transform: translateZ(-35px) scale(36);
+          transform: translateZ(-35px) scale(36);
+}
+
+.parallax__layer--back36 {
+  -webkit-transform: translateZ(-36px) scale(37);
+          transform: translateZ(-36px) scale(37);
+}
+
+.parallax__layer--back37 {
+  -webkit-transform: translateZ(-37px) scale(38);
+          transform: translateZ(-37px) scale(38);
+}
+
+.parallax__layer--back38 {
+  -webkit-transform: translateZ(-38px) scale(39);
+          transform: translateZ(-38px) scale(39);
+}
+
+.parallax__layer--back39 {
+  -webkit-transform: translateZ(-39px) scale(40);
+          transform: translateZ(-39px) scale(40);
+}
+
+.parallax__layer--back40 {
+  -webkit-transform: translateZ(-40px) scale(41);
+          transform: translateZ(-40px) scale(41);
+}
+
+.parallax__layer--back41 {
+  -webkit-transform: translateZ(-41px) scale(42);
+          transform: translateZ(-41px) scale(42);
+}
+
+.parallax__layer--back42 {
+  -webkit-transform: translateZ(-42px) scale(43);
+          transform: translateZ(-42px) scale(43);
+}
+
+.parallax__layer--back43 {
+  -webkit-transform: translateZ(-43px) scale(44);
+          transform: translateZ(-43px) scale(44);
+}
+
+.parallax__layer--back44 {
+  -webkit-transform: translateZ(-44px) scale(45);
+          transform: translateZ(-44px) scale(45);
+}
+
+.parallax__layer--back45 {
+  -webkit-transform: translateZ(-45px) scale(46);
+          transform: translateZ(-45px) scale(46);
+}
+
+.parallax__layer--back46 {
+  -webkit-transform: translateZ(-46px) scale(47);
+          transform: translateZ(-46px) scale(47);
+}
+
+.parallax__layer--back47 {
+  -webkit-transform: translateZ(-47px) scale(48);
+          transform: translateZ(-47px) scale(48);
+}
+
+.parallax__layer--back48 {
+  -webkit-transform: translateZ(-48px) scale(49);
+          transform: translateZ(-48px) scale(49);
+}
+
+.parallax__layer--back49 {
+  -webkit-transform: translateZ(-49px) scale(50);
+          transform: translateZ(-49px) scale(50);
+}
+
+.parallax__layer--back50 {
+  -webkit-transform: translateZ(-50px) scale(51);
+          transform: translateZ(-50px) scale(51);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}

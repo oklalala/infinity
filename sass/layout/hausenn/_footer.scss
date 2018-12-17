@@ -1,0 +1,40 @@
+.hausenn__footer {
+  padding: 75px 100px 65px;
+  height: 245px;
+  background: #d7c5ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .address {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  img {
+    width: 318px;
+    height: 50px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p {
+      font-family: Noto sans;
+      font-weight: light;
+      font-size: 13px;
+      letter-spacing: 1px;
+      line-height: 15px;
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.hausenn_welcome {
+    background-image: url("../image/header_photo_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    width: 105vw;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+#hausenn_welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#welcome_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .center_logo {
+        max-width: 510px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .center_line {
+        background: white;
+        width: 175px;
+        height: 2px;
+
+        @media screen and (max-width: 376px) {
+            display: none;
+        }
+    }
+}
+
+.down_arrow {
+    height: 34px;
+    width: auto;
+    text-align: center;
+    bottom: 5vh;
+    position: absolute;
+    left: 50%;
+
+    img {
+        height: 100%;
+    }
+}

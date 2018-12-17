@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 375px) {
+        max-width: 345px;
+    }
+
+    margin: 0 auto;
+}
+
+%center_line {
+    content: "";
+    background-color: white;
+    width: 175px;
+    height: 2px;
+    top: 50%;
+    position: absolute;
+}
