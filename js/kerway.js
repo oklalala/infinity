@@ -1,7 +1,9 @@
 const loading = document.querySelector('.loading');
+const loadingView = document.querySelector('.loading .loading__view');
 window.addEventListener('load', function (event) {
   setInterval(() => {
     loading.className = "loading animated fadeOut";
+    loading.style.display = "none";
   }, 8000);
 });
 

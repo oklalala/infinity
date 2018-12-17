@@ -2,6 +2,7 @@ const loading = document.querySelector('.loading');
 window.addEventListener('load', function (event) {
   setInterval(() => {
     loading.className = "loading animated fadeOut";
+    loading.style.display = "none";
   }, 8000);
 });
 
